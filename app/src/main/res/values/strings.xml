@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Insights</string>
     <string name="welcome_proceed">Proceed</string>
+    <string name="enter_username">Enter Username:</string>
+    <string name="welcome">Welcome</string>
+    <string name="your_username">Your Username</string>
 </resources>
