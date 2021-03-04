@@ -10,10 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    fun loginPageLoad(view: View){
+    fun loginPageLoad(view:View){
         val intent = Intent(this, LoginPage::class.java)
         startActivity(intent)
         finish()
+
 
     }
 }
