@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/No_action_Bar_Theme">
+        <activity android:name=".MainActivity">
+        <activity android:name=".LoginPage" android:windowSoftInputMode="adjustResize">
         <activity android:name=".Student"></activity>
         <activity android:name=".Instructor" />
-        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        </activity>
+
     </application>
 
 </manifest>
