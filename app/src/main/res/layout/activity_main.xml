@@ -20,18 +20,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@android:color/transparent"
-        android:padding="20dp"
         android:text="@string/welcome_proceed"
-        android:onClick="loginPageLoad"
-        android:textColor="@color/white"
+        android:padding="20dp"
         android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/Heading1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Heading1" />
+        android:background="@android:color/transparent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
