@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed(
             {
                 startActivity(Intent(this,LoginPage::class.java))
+                finish()
             },
             2500
         )
