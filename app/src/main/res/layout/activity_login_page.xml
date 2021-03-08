@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/welcome"
                 android:textStyle="bold"
+                android:textColor="#00897B"
                 android:textSize="30sp"
                 android:layout_gravity="center_horizontal"/>
             <TextView
@@ -43,8 +44,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/your_username"
                 android:padding="10dp"
+                android:id="@+id/login_email_id"
                 android:autofillHints="Username"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -57,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
+                android:id="@+id/login_password"
                 android:autofillHints="@string/password"
                 android:inputType="textPassword"
                 />
@@ -65,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Submit_button"
                 android:layout_marginStart="10dp"
-                android:id="@+id/SubmitButton"
+                android:id="@+id/loginButton"
                 android:layout_gravity="center_horizontal"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

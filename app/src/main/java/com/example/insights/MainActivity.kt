@@ -11,8 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
     fun startLoginActivity(view:View){
-        val intent = Intent(this,LoginPage::class.java)
-        startActivity(intent)
+        startActivity(Intent(this,LoginPage::class.java))
         finish()
     }
 }
