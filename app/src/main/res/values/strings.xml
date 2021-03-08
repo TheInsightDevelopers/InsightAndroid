@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Insight</string>
     <string name="welcome_proceed">Proceed</string>
-    <string name="enter_username">Enter Username:</string>
+    <string name="enter_username">Enter email Id:</string>
     <string name="welcome">Welcome</string>
     <string name="your_username">Your Username</string>
     <string name="Submit_button">Submit</string>
@@ -9,4 +9,5 @@
     <string name="password">Password</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="signUp">sign-up</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
