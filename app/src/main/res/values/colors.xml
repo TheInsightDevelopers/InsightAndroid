@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparency">#e6fffa</color>
 
-    <color name="transparent">0000000</color>
+    <color name="transparent">#00000000</color>
     
     <color name="background_gradient_start">#000000</color>
     <color name="background_gradient_end">#DDDDDD</color>
