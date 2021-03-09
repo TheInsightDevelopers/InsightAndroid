@@ -23,21 +23,14 @@ class LoginPage : AppCompatActivity() {
             val email = findViewById<EditText>(R.id.login_email_id).text.toString()
             val password = findViewById<EditText>(R.id.login_password).text.toString()
             //Login with firebase
-            if(email.isEmpty()){
-                Toast.makeText(this@LoginPage,"Please Enter Your email id",Toast.LENGTH_SHORT).show()
-            }
-            else if(password.isEmpty()){
-                Toast.makeText(this@LoginPage,"Please Enter Your email id",Toast.LENGTH_SHORT).show()
-            }
-            else{
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener {task ->
-                    if(task.isSuccessful){
-                        Toast.makeText(this@LoginPage,"You have been logged in.",Toast.LENGTH_SHORT).show()
-
-                    }
-                    else{
-                        Toast.makeText(this@LoginPage,"Login Failed.",Toast.LENGTH_SHORT).show()
-                    }
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener {task ->
+                if(task.isSuccessful){
+                    Toast.makeText(this@LoginPage,"You have been logged in.",Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@LoginPage,Main_page::class.java))
+                    finish()
+                }
+                else{
+                    Toast.makeText(this@LoginPage,"Login Failed.",Toast.LENGTH_SHORT).show()
                 }
             }
         }

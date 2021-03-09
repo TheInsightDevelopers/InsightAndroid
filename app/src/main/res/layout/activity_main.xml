@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/Heading1"
-        android:layout_width="255dp"
-        android:layout_height="116dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/cardview_compat_inset_shadow"
         android:padding="20dp"
         android:text="@string/app_name"
@@ -22,16 +22,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome_proceed"
-        android:padding="20dp"
-        android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@id/Heading1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:background="@android:color/transparent"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>
