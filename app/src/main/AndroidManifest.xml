@@ -18,6 +18,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/NoActionBarTheme" >
         <activity
             android:name=".Main_page"
@@ -25,21 +26,15 @@
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_main_page"
             android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".ForgotPasswordActivity"/>
+        <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".PlaybackActivity" />
-        <activity android:name=".BrowseErrorActivity" />
-        <activity android:name=".MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
