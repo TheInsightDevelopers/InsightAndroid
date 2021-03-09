@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/welcome"
                 android:textStyle="bold"
-                android:textColor="#00897B"
+                android:textColor="@color/green"
                 android:textSize="30sp"
                 android:layout_gravity="center_horizontal"/>
             <TextView
@@ -70,6 +70,12 @@
                 android:layout_marginStart="10dp"
                 android:id="@+id/loginButton"
                 android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/tvForgotPassword"
+                android:text="@string/forgot_password"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.constraintlayout.widget.ConstraintLayout
