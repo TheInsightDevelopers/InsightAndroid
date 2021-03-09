@@ -7,6 +7,9 @@
     <string name="Submit_button">Submit</string>
     <string name="enter_password">Enter Password</string>
     <string name="password">Password</string>
-    <string name="google_sign_in">Google sign in</string>
+    <string name="google_sign_in">Sign in with Google</string>
     <string name="signUp">sign-up</string>
+    <string name="instructor">Instructor</string>
+    <string name="are_you_a_student_or_an_instructor">Are you a Student or an Instructor?</string>
+    <string name="student">Student</string>
 </resources>

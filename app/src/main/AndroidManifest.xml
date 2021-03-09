@@ -8,19 +8,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/No_action_Bar_Theme">
+        android:theme="@style/NoActionBarTheme">
+        <activity android:name=".Junction"/>
         <activity android:name=".MainActivity">
-        <activity android:name=".LoginPage" android:windowSoftInputMode="adjustResize">
-        <activity android:name=".Student"></activity>
-        <activity android:name=".Instructor" />
-            <intent-filter>
+          <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+       </activity>
+        <activity android:name=".LoginPage" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Student" android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".Instructor" android:windowSoftInputMode="adjustResize"/>
 
-        </activity>
+
 
     </application>
 
