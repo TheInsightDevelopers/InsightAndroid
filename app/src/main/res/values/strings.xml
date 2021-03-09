@@ -43,4 +43,6 @@
     <string name="email">Email</string>
     <string name="reset_password">Reset Password</string>
 
+    <string name="please_wait">Please wait</string>
+
 </resources>
