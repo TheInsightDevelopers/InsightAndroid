@@ -17,7 +17,6 @@ class LoginPage : AppCompatActivity() {
         val forgotBtn = findViewById<TextView>(R.id.tvForgotPassword)
         forgotBtn.setOnClickListener {
             startActivity(Intent(this@LoginPage,ForgotPasswordActivity::class.java))
-            finish()
         }
         val loginBtn = findViewById<Button>(R.id.loginButton)
         loginBtn.setOnClickListener {
