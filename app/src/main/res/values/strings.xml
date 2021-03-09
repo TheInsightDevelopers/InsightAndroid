@@ -14,4 +14,5 @@
     <string name="forgot_password_heading">Forgot Password</string>
     <string name="email">Email</string>
     <string name="reset_password">Reset Password</string>
+    <string name="please_wait">Please wait</string>
 </resources>
