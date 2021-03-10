@@ -3,12 +3,16 @@ package com.example.insights
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
+import android.view.View
+
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import android.widget.Toast.makeText as makeText1
+
 
 class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +38,9 @@ class LoginPage : AppCompatActivity() {
                 }
             }
         }
+    }
+    fun openJunction(view: View){
+        startActivity(Intent(this@LoginPage,Junction::class.java))
     }
 
 

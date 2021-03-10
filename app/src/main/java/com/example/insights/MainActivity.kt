@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         @Suppress("DEPRECATION")
+
         Handler().postDelayed(
             {
                 startActivity(Intent(this,LoginPage::class.java))
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             2500
         )
     }
+
 
 
 }
