@@ -59,7 +59,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:hint="Email Id"
+                        android:hint="@string/email"
                         android:id="@+id/student_register_email"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
@@ -72,7 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:hint="Password"
+                        android:hint="@string/password"
                         android:inputType="textPassword"
                         android:id="@+id/student_register_password"/>
                 </com.google.android.material.textfield.TextInputLayout>
@@ -100,7 +100,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:hint="Class" />
+                        android:hint="@string/class_name" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -113,7 +113,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:hint="School/College" />
+                        android:hint="@string/school_college" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -126,7 +126,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:hint="Favourite Subject" />
+                        android:hint="@string/favourite_subject" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
@@ -134,9 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:id="@+id/student_register_btn"
-                    android:text="Proceed">
-
-                </Button>
+                    android:text="@string/welcome_proceed" />
 
 
             </LinearLayout>
