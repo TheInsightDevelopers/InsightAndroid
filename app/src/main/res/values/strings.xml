@@ -20,7 +20,7 @@
     <string name="student">Student</string>
 
     <string name="title_activity_main_page">Leanback Title</string>
-    
+
     <!-- Error messages -->
     <string name="error_fragment_message">An error occurred</string>
     <string name="dismiss_error">Dismiss</string>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.insights" >
+    package="com.example.insights">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -20,33 +19,36 @@
         android:supportsRtl="true"
 
         android:theme="@style/NoActionBarTheme">
-        <activity android:name=".Junction"/>
+        <activity android:name=".Junction" />
 
 
-        
         <activity
             android:name=".Main_page"
             android:banner="@drawable/app_icon_your_company"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_main_page"
             android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".ForgotPasswordActivity"/>
+        <activity android:name=".ForgotPasswordActivity" />
 
         <activity android:name=".MainActivity">
-          <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
 
-       </activity>
-        <activity android:name=".LoginPage" android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".Student" android:windowSoftInputMode="adjustResize"></activity>
-        <activity android:name=".Instructor" android:windowSoftInputMode="adjustResize"/>
-
-
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Student"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Instructor"
+            android:windowSoftInputMode="adjustResize" />
 
 
     </application>

@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:padding="10dp"
-    android:orientation="vertical"
     android:background="@drawable/login_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".LoginPage">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:elevation="10dp"
         android:padding="21dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginEnd="20dp"
-        >
+        app:cardCornerRadius="20dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -39,9 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:onClick="openInstructorSignUp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
+                android:onClick="openInstructorSignUp"
                 android:text="@string/instructor" />
 
             <Button
@@ -50,8 +49,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="10dp"
-                android:onClick="openStudentSignUp"
                 android:layout_marginTop="15dp"
+                android:onClick="openStudentSignUp"
 
                 android:text="@string/student" />
         </LinearLayout>
