@@ -1,15 +1,44 @@
 <resources>
     <string name="app_name">Insight</string>
     <string name="welcome_proceed">Proceed</string>
-    <string name="enter_username">Enter Username:</string>
+    <string name="enter_username">Enter email Id:</string>
     <string name="welcome">Welcome</string>
+
     <string name="your_username">Email Id</string>
+
     <string name="Submit_button">Submit</string>
-    <string name="enter_password">Enter Password</string>
+    <string name="enter_password">Enter Password:</string>
+
+    <string name="Submit_button_login">Login</string>
+
     <string name="password">Password</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="signUp">sign-up</string>
+
     <string name="instructor">Instructor</string>
     <string name="are_you_a_student_or_an_instructor">Are you a Student or an Instructor?</string>
     <string name="student">Student</string>
+
+    <string name="title_activity_main_page">Leanback Title</string>
+    
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="e_book">E-book</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_heading">Forgot Password</string>
+    <string name="email">Email</string>
+    <string name="reset_password">Reset Password</string>
+
+    <string name="please_wait">Please wait</string>
+
+
 </resources>

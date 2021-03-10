@@ -24,13 +24,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="@string/welcome"
-                android:textStyle="bold"
+                android:textColor="@color/green"
                 android:textSize="30sp"
-                android:layout_gravity="center_horizontal"/>
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,11 +45,15 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/your_username"
                 android:padding="10dp"
+                android:id="@+id/login_email_id"
                 android:autofillHints="Username"
+
                 android:inputType="text"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
             />
+
+               
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,6 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
+                android:id="@+id/login_password"
                 android:autofillHints="@string/password"
                 android:inputType="textPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" />
@@ -68,8 +75,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Submit_button"
                 android:layout_marginStart="10dp"
-                android:id="@+id/SubmitButton"
+                android:id="@+id/loginButton"
                 android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/tvForgotPassword"
+                android:text="@string/forgot_password"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.constraintlayout.widget.ConstraintLayout
