@@ -43,6 +43,9 @@
     <string name="class_name">Class</string>
     <string name="school_college">School/College</string>
     <string name="favourite_subject">Favourite Subject</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>
