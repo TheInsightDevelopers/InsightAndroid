@@ -26,13 +26,14 @@ class Student : AppCompatActivity() {
                 "Name" to name,
                 "Class" to classname,
                 "Fav_subject" to favSubject,
-                "School" to school
+                "School" to school,
+                "type" to "Student"
             )
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener{ task ->
                 if(task.isSuccessful){
                     Toast.makeText(this@Student,"You have been registered successfully",Toast.LENGTH_SHORT).show()
                     val db = FirebaseFirestore.getInstance()
-                    db.collection("User_students").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
+                    db.collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
                         if(task1.isSuccessful){
                             Toast.makeText(this@Student,"Your details have saved successfully",Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this@Student,Main_page::class.java))

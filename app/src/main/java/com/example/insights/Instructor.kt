@@ -15,6 +15,9 @@ class Instructor : AppCompatActivity() {
         findViewById<Button>(R.id.instructor_register_btn).setOnClickListener {
             val email = findViewById<EditText>(R.id.instructor_register_email).text.toString()
             val password = findViewById<EditText>(R.id.instructor_register_password).text.toString()
+            val name = findViewById<EditText>(R.id.instructor_register_name).text.toString()
+            val degree = findViewById<EditText>(R.id.instructor_register_degree).text.toString()
+            val job =
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
                 if(task.isSuccessful){
                     Toast.makeText(this@Instructor,"You have been registered successfully", Toast.LENGTH_SHORT).show()
