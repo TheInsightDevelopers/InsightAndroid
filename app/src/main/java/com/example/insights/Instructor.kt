@@ -18,7 +18,7 @@ class Instructor : AppCompatActivity() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
                 if(task.isSuccessful){
                     Toast.makeText(this@Instructor,"You have been registered successfully", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@Instructor,mainPageActivity::class.java))
+                    startActivity(Intent(this@Instructor,mainPageNew::class.java))
                     finish()
                 }
                 else{
