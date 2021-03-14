@@ -44,6 +44,17 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/user_name"
+                android:inputType="textPersonName"
+                android:textColor="#3949AB"
+                android:textSize="30sp" />
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
@@ -53,6 +64,20 @@
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/user_gmil_com1"
+                android:inputType="textEmailAddress"
+                android:rotation="-72"
+                android:textAlignment="center"
+                android:textColor="#5E35B1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -64,6 +89,17 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/standard1"
+                android:inputType="textPersonName"
+                android:textColor="#5E35B1"
+                android:textSize="30sp"
+                android:autofillHints="" />
+
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
@@ -73,6 +109,19 @@
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/mm_dd_yyyy1"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#5E35B1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -84,6 +133,17 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email_id1"
+                android:inputType="textPersonName"
+                android:textColor="#5E35B1"
+                android:textSize="30sp" />
+
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
@@ -94,6 +154,19 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/favorite_subject1"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#5E35B1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
+
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
@@ -103,6 +176,19 @@
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/book_donated1"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#5E35B1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <Button
                 android:id="@+id/button2"
