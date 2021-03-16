@@ -53,13 +53,6 @@
     <string name="book_donated">Book Donated</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="sudent_profile">Sudent Profile</string>
-    <string name="user_name">user name</string>
-    <string name="email_id1">email_id</string>
-    <string name="standard1">standard</string>
-    <string name="user_gmil_com1">user@gmil.com</string>
-    <string name="mm_dd_yyyy1">mm/dd/yyyy</string>
-    <string name="favorite_subject1">favorite_subject</string>
-    <string name="book_donated1">book_donated</string>
 
 
 </resources>
