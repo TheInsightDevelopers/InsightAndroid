@@ -53,6 +53,7 @@
     <string name="book_donated">Book Donated</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="sudent_profile">Sudent Profile</string>
+    <string name="student_profile">Student Profile</string>
 
 
 </resources>

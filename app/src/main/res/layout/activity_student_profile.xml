@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBF9FA"
+    android:background="#2A528F"
     tools:context=".student_profile">
 
     <TextView
@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/sudent_profile"
-        android:textColor="#1E88E5"
+        android:text="@string/student_profile"
+        android:textColor="#1EE539"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,12 +32,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/student_profile_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="93dp"
                 android:text="@string/student_name_2"
                 android:textAlignment="center"
                 android:textColor="#D81B60"
@@ -47,7 +47,7 @@
             <TextView
                 android:id="@+id/student_profile_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="77dp"
                 android:text="@string/email_id"
                 android:textAlignment="center"
                 android:textColor="#D81B60"
@@ -57,16 +57,17 @@
             <TextView
                 android:id="@+id/student_profile_class"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="99dp"
                 android:text="@string/standard"
                 android:textAlignment="center"
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/student_profile_school"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 android:text="@string/institute_name"
                 android:textAlignment="center"
                 android:textColor="#D81B60"
@@ -76,22 +77,22 @@
             <TextView
                 android:id="@+id/student_profile_fav_subject"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="118dp"
                 android:text="@string/favorite_subject"
                 android:textAlignment="center"
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
             <Button
                 android:id="@+id/button2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/edit_profile"
-                android:textAlignment="gravity"
+                android:textAlignment="center"
                 android:textColor="#FDF9F8"
                 android:textSize="30sp"
-                android:textStyle="bold"
-                android:translationX="65sp" />
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>
