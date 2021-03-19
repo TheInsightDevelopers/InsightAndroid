@@ -9,4 +9,11 @@
     <string name="password">Password</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="signUp">sign-up</string>
+    <string name="instructor_profile_name">Name:</string>
+    <string name="instructor_profile_emailid">Email Id:</string>
+    <string name="instructor_profile_degree">Degree:</string>
+    <string name="instructor_profile_currentjob">Current Job:</string>
+    <string name="instructor_profile_areaofspecialisation">Area of Specialisation:</string>
+    <string name="instructor_profile_editprofile">Edit Profile</string>
+    <string name="instructor_profile_title">Instructor</string>
 </resources>
