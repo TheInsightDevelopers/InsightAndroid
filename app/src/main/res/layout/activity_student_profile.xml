@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2A528F"
+    android:background="@drawable/images__3_"
     tools:context=".student_profile">
 
     <TextView
@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="93dp"
                 android:text="@string/student_name_2"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -49,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="77dp"
                 android:text="@string/email_id"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="99dp"
                 android:text="@string/standard"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:text="@string/institute_name"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -79,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="118dp"
                 android:text="@string/favorite_subject"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="30sp"
                 android:textStyle="bold" />
