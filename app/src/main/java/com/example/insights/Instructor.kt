@@ -30,7 +30,7 @@ class Instructor : AppCompatActivity() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
                 if(task.isSuccessful){
                     Toast.makeText(this@Instructor,"You have been registered successfully", Toast.LENGTH_SHORT).show()
-                    FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
+   FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
                         if(task1.isSuccessful){
                             Toast.makeText(this@Instructor,"Your details have saved successfully",Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this@Instructor,Main_page::class.java))
@@ -41,6 +41,7 @@ class Instructor : AppCompatActivity() {
 
                         }
                     }
+
 
                 }
                 else{
