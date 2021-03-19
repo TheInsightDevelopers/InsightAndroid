@@ -60,7 +60,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:layout_marginTop="20dp"
-                       android:hint="@string/name"
+                       android:hint="@string/student_name_2"
                        android:id="@+id/instructor_register_name"/>
                </com.google.android.material.textfield.TextInputLayout>
                <com.google.android.material.textfield.TextInputLayout
