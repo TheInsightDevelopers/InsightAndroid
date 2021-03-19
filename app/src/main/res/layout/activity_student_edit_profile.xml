@@ -13,7 +13,7 @@
         android:layout_height="69dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="10dp"
-        android:text="Edit Profile"
+        android:text="@string/edit_profile21"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#D81B60"
@@ -26,9 +26,10 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="388dp"
-        android:layout_height="621dp"
+        android:layout_width="397dp"
+        android:layout_height="632dp"
         android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
@@ -36,13 +37,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/name22"
                 android:textAlignment="viewStart"
                 android:textColor="#12D1E8"
                 android:textSize="36sp"
@@ -52,9 +53,11 @@
                 android:id="@+id/editTextTextPersonName2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
+                android:hint="@string/name31"
                 android:inputType="textPersonName"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#FDD835"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -63,71 +66,94 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/email_id23"
+                android:textAlignment="viewStart"
+                android:textColor="#12D1E8"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/email_id32"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:textAlignment="viewStart"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/standard24"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#12D1E8"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/standard33"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:textAlignment="viewStart"
+                android:textColor="#D81B60"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/institute_name25"
+                android:textAlignment="viewStart"
+                android:textColor="#12D1E8"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/institute_name34"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:textAlignment="viewStart"
+                android:textColor="#D81B60"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/favorite_subject26"
+                android:textAlignment="viewStart"
+                android:textColor="#12D1E8"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/favorite_subject35"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:textAlignment="viewStart"
+                android:textColor="#D81B60"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
         </LinearLayout>
     </ScrollView>
 
