@@ -9,15 +9,15 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="301dp"
-        android:layout_height="69dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="10dp"
-        android:text="Edit Profile"
+        android:text="@string/edit_profile21"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#D81B60"
-        android:textSize="36sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,9 +26,11 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="388dp"
-        android:layout_height="621dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
@@ -36,98 +38,110 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/name22"
                 android:textAlignment="viewStart"
                 android:textColor="#12D1E8"
-                android:textSize="36sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/et_edit_profile_stud_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
+                android:hint="@string/name31"
                 android:inputType="textPersonName"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#FDD835"
-                android:textSize="36sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/standard24"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#12D1E8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/et_edit_profile_stud_class"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/standard33"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:textAlignment="viewStart"
+                android:textColor="#D81B60"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/institute_name25"
+                android:textAlignment="viewStart"
+                android:textColor="#12D1E8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName5"
+                android:id="@+id/et_edit_profile_stud_institute"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/institute_name34"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:textAlignment="viewStart"
+                android:textColor="#D81B60"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/favorite_subject26"
+                android:textAlignment="viewStart"
+                android:textColor="#12D1E8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName6"
+                android:id="@+id/et_edit_profile_stud_fav_subject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/favorite_subject35"
                 android:inputType="textPersonName"
-                android:text="Name" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
+                android:textAlignment="viewStart"
+                android:textColor="#D81B60"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:id="@+id/stud_profile_update_btn"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:text="@string/edit_profile"/>
 
-            <EditText
-                android:id="@+id/editTextTextPersonName7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
         </LinearLayout>
     </ScrollView>
 

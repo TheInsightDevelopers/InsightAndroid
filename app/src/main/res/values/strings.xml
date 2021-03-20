@@ -43,12 +43,6 @@
     <string name="class_name">Class</string>
     <string name="school_college">School/College</string>
     <string name="favourite_subject">Favourite Subject</string>
-
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="student_name_2">Name</string>
     <string name="student_s_profile">Student\'s Profile</string>
     <string name="email_id">Email-id</string>
@@ -57,10 +51,21 @@
     <string name="institute_name">Institute Name</string>
     <string name="favorite_subject">Favorite Subject</string>
     <string name="book_donated">Book Donated</string>
-    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_profile">Update Profile</string>
     <string name="sudent_profile">Sudent Profile</string>
     <string name="student_profile">Student Profile</string>
-
+    <string name="edit_profile21">Edit Profile</string>
+    <string name="name22">Name</string>
+    <string name="email_id23">Email-id</string>
+    <string name="standard24">Standard</string>
+    <string name="institute_name25">Institute Name</string>
+    <string name="favorite_subject26">Favorite Subject</string>
+    <string name="name31">Name</string>
+    <string name="email_id32">Email-id</string>
+    <string name="standard33">Standard</string>
+    <string name="institute_name34">Institute Name</string>
+    <string name="favorite_subject35">Favorite Subject</string>
+    <string name="title_home">Home</string>
 
 
 </resources>
