@@ -71,6 +71,12 @@
     <string name="standard224">Standard</string>
     <string name="institute_name225">Institute Name</string>
     <string name="favourite_subject226">Favourite Subject</string>
+    <string name="name333">Name</string>
+    <string name="email_id333">Email-Id</string>
+    <string name="standard333">Standard</string>
+    <string name="institute_name333">Institute Name</string>
+    <string name="favourite_subject333">Favourite Subject</string>
+    <string name="favourite_subject4444">Favourite Subject</string>
 
 
 </resources>

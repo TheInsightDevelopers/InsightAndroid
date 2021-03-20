@@ -43,11 +43,11 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/name333"
                 android:textAlignment="viewStart"
                 android:textAllCaps="true"
                 android:textColor="#FDD835"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -57,18 +57,18 @@
                 android:text="@string/student_name_2"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Email-Id"
+                android:text="@string/email_id333"
                 android:textAlignment="viewStart"
                 android:textAllCaps="true"
                 android:textColor="#FDD835"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -85,10 +85,10 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Standard"
+                android:text="@string/standard333"
                 android:textAlignment="viewStart"
                 android:textColor="#FDD835"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -98,17 +98,17 @@
                 android:text="@string/standard"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Institute Name"
+                android:text="@string/institute_name333"
                 android:textAlignment="viewStart"
                 android:textColor="#FDD835"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -118,27 +118,27 @@
                 android:text="@string/institute_name"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Favourite Subject"
+                android:text="@string/favourite_subject333"
                 android:textAlignment="viewStart"
                 android:textColor="#FDD835"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/student_profile_fav_subject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Favourite Subject"
+                android:text="@string/favourite_subject4444"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
