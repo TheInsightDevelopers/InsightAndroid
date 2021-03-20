@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -33,6 +34,13 @@ class student_profile : AppCompatActivity() {
         }
         findViewById<Button>(R.id.stud_profile_update_btn_act).setOnClickListener {
             startActivity(Intent(this@student_profile,studentEditProfile::class.java))
+        }
+        findViewById<Button>(R.id.student_sign_out).setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this@student_profile,LoginPage::class.java))
+            finish()
+            Toast.makeText(this@student_profile,"You have been Logged Out",Toast.LENGTH_SHORT).show()
+
         }
 
     }
