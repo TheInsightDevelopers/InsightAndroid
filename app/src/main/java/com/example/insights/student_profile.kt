@@ -1,7 +1,9 @@
 package com.example.insights
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -28,6 +30,9 @@ class student_profile : AppCompatActivity() {
 
 
             }
+        }
+        findViewById<Button>(R.id.stud_profile_update_btn).setOnClickListener {
+            startActivity(Intent(this@student_profile,studentEditProfile::class.java))
         }
 
     }
