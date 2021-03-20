@@ -20,16 +20,12 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
 
-        <activity android:name=".androidDevelopment1"></activity>
+        <activity android:name=".androidDevelopment1" />
         <activity android:name=".mainPageNew" />
-        <activity android:name=".studentEditProfile"></activity>
+        <activity android:name=".studentEditProfile" />
         <activity android:name=".student_profile" />
 
         <activity android:name=".Junction" />
-        <activity
-            android:name=".Main_page"
-            android:label="@string/title_activity_main_page"
-            android:screenOrientation="portrait" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

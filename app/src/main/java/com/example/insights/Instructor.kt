@@ -33,8 +33,7 @@ class Instructor : AppCompatActivity() {
    FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
                         if(task1.isSuccessful){
                             Toast.makeText(this@Instructor,"Your details have saved successfully",Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this@Instructor,Main_page::class.java))
-                            finish()
+
                         }
                         else{
                             Toast.makeText(this@Instructor,"An error occurred",Toast.LENGTH_SHORT).show()
