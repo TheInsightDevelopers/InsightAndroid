@@ -22,7 +22,8 @@ class studentEditProfile : AppCompatActivity() {
             val data = hashMapOf("Name" to name,
                                     "Class" to classname,
                                         "Fav_subject" to fav,
-                                            "School" to school)
+                                            "School" to school,
+                                                "type" to "Student")
             FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task ->
                 if(task.isSuccessful){
                     Toast.makeText(this@studentEditProfile,"Your Profile Has Been Updated",Toast.LENGTH_SHORT).show()
