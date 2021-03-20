@@ -8,9 +8,8 @@
     tools:context=".studentEditProfile">
 
     <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="727dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,12 +21,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView88"
-                android:layout_width="match_parent"
-                android:layout_height="89dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/edit_profile21"
+                android:text="@string/edit_profile"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="#D81B60"
@@ -35,22 +34,19 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/name22"
+                android:text="@string/student_name_2"
                 android:textAlignment="viewStart"
-                android:textColor="#12D1E8"
+                android:textColor="@color/std_color_tv"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints=""
                 android:ems="10"
-                android:hint="@string/name31"
+                android:hint="@string/student_name_2"
                 android:inputType="textPersonName"
                 android:textAlignment="viewStart"
                 android:textColor="#FDD835"
@@ -58,45 +54,21 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/email_id23"
-                android:textAlignment="viewStart"
-                android:textColor="#12D1E8"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/email_id32"
-                android:inputType="textPersonName"
-                android:textAlignment="viewStart"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/standard24"
+                android:text="@string/standard"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
-                android:textColor="#12D1E8"
+                android:textColor="@color/std_color_tv"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
-                android:hint="@string/standard33"
+                android:hint="@string/standard"
                 android:inputType="textPersonName"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
@@ -104,22 +76,20 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/institute_name25"
+                android:text="@string/institute_name"
                 android:textAlignment="viewStart"
                 android:textColor="#12D1E8"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
-                android:hint="@string/institute_name34"
+                android:hint="@string/institute_name"
                 android:inputType="textPersonName"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
@@ -127,27 +97,32 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/favorite_subject26"
+                android:text="@string/favourite_subject"
                 android:textAlignment="viewStart"
                 android:textColor="#12D1E8"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
-                android:hint="@string/favorite_subject35"
+                android:hint="@string/favorite_subject"
                 android:inputType="textPersonName"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="36sp"
                 android:textStyle="bold" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                app:cornerRadius="10dp"/>
 
         </LinearLayout>
     </ScrollView>

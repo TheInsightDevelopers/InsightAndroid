@@ -21,7 +21,7 @@ class student_profile : AppCompatActivity() {
                 val school = hashMapData?.get("School")
                 val email = FirebaseAuth.getInstance().currentUser.email
                 findViewById<TextView>(R.id.student_profile_name).text = name as CharSequence?
-                findViewById<TextView>(R.id.student_profile_email).text = email as CharSequence?
+                findViewById<TextView>(R.id.student_profile_email).text = email
                 findViewById<TextView>(R.id.student_profile_class).text = classname as CharSequence?
                 findViewById<TextView>(R.id.student_profile_fav_subject).text = favSubject as CharSequence?
                 findViewById<TextView>(R.id.student_profile_school).text = school as CharSequence?

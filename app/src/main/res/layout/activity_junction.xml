@@ -34,7 +34,6 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/SubmitButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -44,7 +43,6 @@
                 android:text="@string/instructor" />
 
             <Button
-                android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
