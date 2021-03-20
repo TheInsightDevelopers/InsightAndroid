@@ -31,7 +31,7 @@ class student_profile : AppCompatActivity() {
 
             }
         }
-        findViewById<Button>(R.id.stud_profile_update_btn).setOnClickListener {
+        findViewById<Button>(R.id.stud_profile_update_btn_act).setOnClickListener {
             startActivity(Intent(this@student_profile,studentEditProfile::class.java))
         }
 
