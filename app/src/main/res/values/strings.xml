@@ -51,9 +51,35 @@
     <string name="institute_name">Institute Name</string>
     <string name="favorite_subject">Favorite Subject</string>
     <string name="book_donated">Book Donated</string>
-    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_profile">Update Profile</string>
     <string name="sudent_profile">Sudent Profile</string>
+
     <string name="forum_message">Message</string>
+    <string name="student_profile">Student Profile</string>
+    <string name="edit_profile21">Edit Profile</string>
+    <string name="name22">Name</string>
+    <string name="email_id23">Email-id</string>
+    <string name="standard24">Standard</string>
+    <string name="institute_name25">Institute Name</string>
+    <string name="favorite_subject26">Favorite Subject</string>
+    <string name="name31">Name</string>
+    <string name="email_id32">Email-id</string>
+    <string name="standard33">Standard</string>
+    <string name="institute_name34">Institute Name</string>
+    <string name="favorite_subject35">Favorite Subject</string>
+    <string name="title_home">Home</string>
+    <string name="name222">Name</string>
+    <string name="email_id223">Email-ID</string>
+    <string name="standard224">Standard</string>
+    <string name="institute_name225">Institute Name</string>
+    <string name="favourite_subject226">Favourite Subject</string>
+    <string name="name333">Name</string>
+    <string name="email_id333">Email-Id</string>
+    <string name="standard333">Standard</string>
+    <string name="institute_name333">Institute Name</string>
+    <string name="favourite_subject333">Favourite Subject</string>
+    <string name="favourite_subject4444">Favourite Subject</string>
+
 
 
 </resources>

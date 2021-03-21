@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.ktx.Firebase
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,10 +17,16 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed(
                 {
-                    startActivity(Intent(this, LoginPage::class.java))
-                    finish()
+                    if(FirebaseAuth.getInstance().currentUser == null){
+                        startActivity(Intent(this, LoginPage::class.java))
+                        finish()
+                    }
+                    else{
+                        startActivity(Intent(this, mainPageNew::class.java))
+                        finish()
+                    }
                 },
-                2500
+                500
         )
     }
 

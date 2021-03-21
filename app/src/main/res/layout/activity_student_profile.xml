@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBF9FA"
+    android:background="@drawable/images__3_"
     tools:context=".student_profile">
 
     <TextView
@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/sudent_profile"
-        android:textColor="#1E88E5"
+        android:text="@string/student_profile"
+        android:textColor="#1EE539"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,9 +22,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="390dp"
-        android:layout_height="597dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="1dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -32,15 +37,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name333"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="#FDD835"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/student_profile_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/student_name_2"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_id333"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="#FDD835"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -49,8 +76,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/email_id"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/standard333"
+                android:textAlignment="viewStart"
+                android:textColor="#FDD835"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -59,17 +96,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/standard"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/institute_name333"
+                android:textAlignment="viewStart"
+                android:textColor="#FDD835"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/student_profile_school"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/institute_name"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/favourite_subject333"
+                android:textAlignment="viewStart"
+                android:textColor="#FDD835"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -77,21 +135,34 @@
                 android:id="@+id/student_profile_fav_subject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/favorite_subject"
-                android:textAlignment="center"
+                android:text="@string/favourite_subject4444"
+                android:textAlignment="viewStart"
                 android:textColor="#D81B60"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
+
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/stud_profile_update_btn_act"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="120dp"
+                android:background="@color/transparent"
                 android:text="@string/edit_profile"
-                android:textAlignment="gravity"
+                android:textAlignment="center"
                 android:textColor="#FDF9F8"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:translationX="65sp" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/student_sign_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/sign_out"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
         </LinearLayout>
     </ScrollView>

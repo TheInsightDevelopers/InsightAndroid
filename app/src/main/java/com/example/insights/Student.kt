@@ -32,10 +32,16 @@ class Student : AppCompatActivity() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener{ task ->
                 if(task.isSuccessful){
                     Toast.makeText(this@Student,"You have been registered successfully",Toast.LENGTH_SHORT).show()
+
                     val db = FirebaseFirestore.getInstance()
                     db.collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
                         if(task1.isSuccessful){
                             Toast.makeText(this@Student,"Your details have saved successfully",Toast.LENGTH_SHORT).show()
+
+
+                            startActivity(Intent(this@Student,mainPageNew::class.java))
+                            finish()
+
 
                         }
                         else{

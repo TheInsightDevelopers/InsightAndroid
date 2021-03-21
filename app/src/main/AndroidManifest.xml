@@ -15,20 +15,23 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:banner="@color/black"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:banner="@color/black"
         android:theme="@style/NoActionBarTheme">
+
         <activity android:name=".ForumnActivity" />
         <activity android:name=".student_profile" />
+
+
+        <activity android:name=".androidDevelopment1" />
+        <activity android:name=".mainPageNew"/>
+        <activity android:name=".studentEditProfile" />
+       
+
+
         <activity android:name=".Junction" />
-        <activity
-            android:name=".Main_page"
-            android:banner="@drawable/app_icon_your_company"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_main_page"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="portrait" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
