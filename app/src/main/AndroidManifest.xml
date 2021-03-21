@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:banner="@color/black"
         android:theme="@style/NoActionBarTheme">
-        <activity android:name=".ForumnActivity"></activity>
+        <activity android:name=".ForumnActivity" />
         <activity android:name=".student_profile" />
         <activity android:name=".Junction" />
         <activity
@@ -34,7 +34,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity

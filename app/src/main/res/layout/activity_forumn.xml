@@ -5,7 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/green_grad"
+
     tools:context=".ForumnActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Forum"
+        android:background="#AC061F"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:id="@+id/forum_head"
+        android:textSize="40sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_recycler"
+        app:layout_constraintTop_toBottomOf="@id/forum_head"
+        app:layout_constraintStart_toStartOf="parent"
+        />
     <com.google.android.material.textfield.TextInputEditText
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
