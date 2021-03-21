@@ -36,8 +36,7 @@ class Student : AppCompatActivity() {
                     db.collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
                         if(task1.isSuccessful){
                             Toast.makeText(this@Student,"Your details have saved successfully",Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this@Student,Main_page::class.java))
-                            finish()
+
                         }
                         else{
                             Toast.makeText(this@Student,"An error occurred",Toast.LENGTH_SHORT).show()

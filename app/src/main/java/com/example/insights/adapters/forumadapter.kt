@@ -33,7 +33,7 @@ class forumadapter(val context: Context, val items: ArrayList<HashMap<String,Str
         return items.size
     }
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val tv_item = view.findViewById<TextView>(R.id.message)
+        val tv_item = view.findViewById<TextView>(R.id.forum_message)
 
         val sender = view.findViewById<TextView>(R.id.forum_sender_tv)
     }
