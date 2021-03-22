@@ -53,6 +53,8 @@
     <string name="book_donated">Book Donated</string>
     <string name="edit_profile">Update Profile</string>
     <string name="sudent_profile">Sudent Profile</string>
+
+    <string name="forum_message">Message</string>
     <string name="student_profile">Student Profile</string>
     <string name="edit_profile21">Edit Profile</string>
     <string name="name22">Name</string>
@@ -77,6 +79,7 @@
     <string name="institute_name333">Institute Name</string>
     <string name="favourite_subject333">Favourite Subject</string>
     <string name="favourite_subject4444">Favourite Subject</string>
+
 
 
 </resources>
