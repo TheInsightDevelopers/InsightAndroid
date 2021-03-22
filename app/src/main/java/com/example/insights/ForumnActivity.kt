@@ -31,17 +31,8 @@ class ForumnActivity : AppCompatActivity() {
         val Itemadapter = forumadapter(this, messagedata)
         recyclerview.adapter = Itemadapter
 
-        /***************************************************Getting Initial Messages From Firestore*****************************/
 
-        db.collection("message").get().addOnSuccessListener { documents ->
-            for(usermessages in documents){
-                val messagehashmap = usermessages.data
-                messagedata.add(messagehashmap as HashMap<String, String>)
 
-                val Itemadapter = forumadapter(this, messagedata)
-                recyclerview.adapter = Itemadapter
-            }
-        }
         /***************************************Sending Message***********************************************/
         //adding onclick listener
         findViewById<ImageButton>(R.id.forum_send_button).setOnClickListener {

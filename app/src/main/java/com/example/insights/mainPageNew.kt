@@ -43,6 +43,9 @@ class mainPageNew : AppCompatActivity() {
                     }
                 }
         }
+        findViewById<ImageButton>(R.id.forum_start_btn).setOnClickListener {
+            startActivity(Intent(this@mainPageNew, ForumnActivity::class.java))
+        }
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
