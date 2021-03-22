@@ -79,7 +79,12 @@
     <string name="institute_name333">Institute Name</string>
     <string name="favourite_subject333">Favourite Subject</string>
     <string name="favourite_subject4444">Favourite Subject</string>
-
+    <string name="book_name_upload">Enter Book Name</string>
+    <string name="upload_book_title">Upload Book</string>
+    <string name="your_name_upload_book">Your Name</string>
+    <string name="comments_upload_book">Comments</string>
+    <string name="upload_select_book">Select Book</string>
+    <string name="upload_book_btn">Upload Book</string>
 
 
 </resources>
