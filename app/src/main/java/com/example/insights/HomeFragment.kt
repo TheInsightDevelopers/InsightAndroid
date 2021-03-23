@@ -28,8 +28,8 @@ class HomeFragment : Fragment() {
         }
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
-        var recyclerView: RecyclerView =root.findViewById(R.id.recyclerview)
-        recyclerView.layoutManager= LinearLayoutManager(getContext())
+        var recyclerView: RecyclerView = root.findViewById<RecyclerView>(R.id.recyclerview)
+        recyclerView.layoutManager= LinearLayoutManager(context)
         val itemAdapter= ItemAdapter(this,bookvalues)
         recyclerView.adapter=(itemAdapter)
 
