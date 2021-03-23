@@ -1,13 +1,12 @@
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.insights.ItemAdapter
 import com.example.insights.R
-import com.example.insights.androidDevelopment1
-import java.util.zip.Inflater
 
 class HomeFragment : Fragment() {
 
@@ -20,12 +19,21 @@ class HomeFragment : Fragment() {
     ): View? {
 
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val imageButton1 : ImageButton =root.findViewById(R.id.androidDevelopmentImageButton1)
-        imageButton1.setOnClickListener{
-            val intent = Intent(activity,androidDevelopment1::class.java)
-            startActivity(intent)
-        }
+
+        var recyclerView: RecyclerView =root.findViewById(R.id.recyclerview)
+        recyclerView.layoutManager= LinearLayoutManager(getContext())
+        val itemAdapter= ItemAdapter(this,getItemsList())
+        recyclerView.adapter=(itemAdapter)
 
         return root
+    }
+    private fun getItemsList(): ArrayList<String> {
+        val list = ArrayList<String>()
+
+        for(i in 1..15){
+            list.add("Item $i")
+        }
+
+        return list
     }
 }
