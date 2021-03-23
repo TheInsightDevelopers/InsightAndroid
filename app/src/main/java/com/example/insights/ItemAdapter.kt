@@ -12,14 +12,14 @@ import androidx.core.content.res.ColorStateListInflaterCompat.inflate
 import androidx.recyclerview.widget.RecyclerView
 import java.security.AccessController.getContext
 
-class ItemAdapter(val context: HomeFragment, val items:ArrayList<String>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
+class ItemAdapter(val context: HomeFragment, val items:ArrayList<HashMap<String,String>>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ViewHolder {
         return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.home_custom_row,parent,false))
     }
 
     override fun onBindViewHolder(holder: ItemAdapter.ViewHolder, position: Int) {
         val item=items.get(position)
-        holder.topicItem.text=item
+        holder.topicItem.text=item["Title"]
     }
 
     override fun getItemCount(): Int {

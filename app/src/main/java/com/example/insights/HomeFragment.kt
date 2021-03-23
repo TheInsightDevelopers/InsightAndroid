@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insights.ItemAdapter
 import com.example.insights.R
+import com.google.firebase.firestore.FirebaseFirestore
 
 class HomeFragment : Fragment() {
 
@@ -18,11 +19,18 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        val bookvalues = ArrayList<HashMap<String,String>>()
+        val db = FirebaseFirestore.getInstance()
+        db.collection("Books").get().addOnSuccessListener { books ->
+            for(book in books){
+                bookvalues.add(book.data as HashMap<String, String>)
+            }
+        }
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
         var recyclerView: RecyclerView =root.findViewById(R.id.recyclerview)
         recyclerView.layoutManager= LinearLayoutManager(getContext())
-        val itemAdapter= ItemAdapter(this,getItemsList())
+        val itemAdapter= ItemAdapter(this,bookvalues)
         recyclerView.adapter=(itemAdapter)
 
         return root
