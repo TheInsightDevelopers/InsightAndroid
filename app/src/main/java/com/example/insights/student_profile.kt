@@ -3,6 +3,7 @@ package com.example.insights
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -44,7 +45,9 @@ class student_profile : AppCompatActivity() {
         }
 
     }
-fun signOutUser(){
+fun signOutUser(view: View){
     FirebaseAuth.getInstance().signOut()
+    startActivity(Intent(this@student_profile,LoginPage::class.java))
+    finish()
 }
 }
