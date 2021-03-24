@@ -45,9 +45,25 @@ class student_profile : AppCompatActivity() {
         }
 
     }
-fun signOutUser(view: View){
-    FirebaseAuth.getInstance().signOut()
-    startActivity(Intent(this@student_profile,LoginPage::class.java))
-    finish()
-}
+    fun signOutUser(view: View){
+        FirebaseAuth.getInstance().signOut()
+        startActivity(Intent(this@student_profile,LoginPage::class.java))
+        finish()
+    }
+    fun deleteAccount(view: View){
+        FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).delete().addOnCompleteListener { task ->
+            if(task.isSuccessful){
+                FirebaseAuth.getInstance().currentUser.delete().addOnCompleteListener { task2 ->
+                    if(task2.isSuccessful){
+                        Toast.makeText(this@student_profile,"Your account and data has been deleted",Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this@student_profile,LoginPage::class.java))
+                        finish()
+                    }
+                }
+            }
+            else{
+                Toast.makeText(this@student_profile,"An error Occured",Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
 }
