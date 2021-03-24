@@ -80,7 +80,12 @@
     <string name="favourite_subject333">Favourite Subject</string>
     <string name="favourite_subject4444">Favourite Subject</string>
     <string name="delete_account">Delete Account</string>
-
+    <string name="upload_video_student_profile">Upload Video</string>
+    <string name="video_title_upload">Enter Title for Video</string>
+    <string name="your_name_upload">Your Name</string>
+    <string name="comments">Comments</string>
+    <string name="select_video_upload">Select Video</string>
+    <string name="upload_video">Upload Video</string>
 
 
 </resources>

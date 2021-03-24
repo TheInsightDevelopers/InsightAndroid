@@ -66,4 +66,7 @@ class student_profile : AppCompatActivity() {
             }
         }
     }
+    fun startVideoUpload(view: View){
+
+    }
 }

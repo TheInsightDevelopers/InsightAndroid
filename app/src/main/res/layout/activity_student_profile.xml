@@ -139,13 +139,20 @@
                 android:textColor="#D81B60"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="@string/upload_video_student_profile"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"/>
 
             <Button
                 android:id="@+id/stud_profile_update_btn_act"
                 android:layout_width="wrap_content"
                 android:layout_height="67dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/transparent"
                 android:text="@string/edit_profile"
                 android:textAlignment="center"
