@@ -44,4 +44,7 @@ class student_profile : AppCompatActivity() {
         }
 
     }
+fun signOutUser(){
+    FirebaseAuth.getInstance().signOut()
+}
 }
