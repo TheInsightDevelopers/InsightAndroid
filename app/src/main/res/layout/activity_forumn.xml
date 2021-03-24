@@ -7,16 +7,7 @@
     android:background="@drawable/green_grad"
 
     tools:context=".ForumnActivity">
-   <ScrollView
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent">
-       <androidx.constraintlayout.widget.ConstraintLayout
-           android:layout_width="match_parent"
-           android:layout_height="match_parent">
+
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
@@ -24,18 +15,20 @@
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintTop_toTopOf="parent"
                android:text="Forum"
-               android:background="#AC061F"
                android:textAlignment="center"
-               android:textColor="@color/green"
+               android:layout_marginBottom="10dp"
+               android:textColor="@color/purple_500"
                android:id="@+id/forum_head"
-               android:textSize="40sp"/>
+               android:textSize="30sp"/>
            <androidx.recyclerview.widget.RecyclerView
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_height="match_parent"
                android:id="@+id/chat_recycler"
-
+               android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toTopOf="@id/message_input"
                app:layout_constraintTop_toBottomOf="@id/forum_head"
                app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginBottom="40dp"
                />
            <com.google.android.material.textfield.TextInputEditText
                android:layout_height="wrap_content"
@@ -43,10 +36,12 @@
                app:layout_constraintStart_toStartOf="parent"
                android:textColor="@color/black"
                android:textAlignment="center"
-               app:layout_constraintTop_toBottomOf="@id/chat_recycler"
+               android:padding="10dp"
+               android:layout_marginRight="20dp"
                app:layout_constraintBottom_toBottomOf="parent"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="20dp"
                android:id="@+id/message_input"
-               app:layout_constraintEnd_toStartOf="@id/forum_send_button"
                android:hint="@string/forum_message"/>
            <ImageButton
                app:layout_constraintTop_toTopOf="@id/message_input"
@@ -54,12 +49,12 @@
                app:layout_constraintBottom_toBottomOf="@id/message_input"
                android:layout_width="wrap_content"
                app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toEndOf="@id/message_input"
                android:id="@+id/forum_send_button"
                android:background="@color/transparent"
                android:src="@drawable/send_ic"
                />
-       </androidx.constraintlayout.widget.ConstraintLayout>
-   </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
