@@ -1,19 +1,15 @@
 <resources>
     <string name="app_name">Insight</string>
     <string name="welcome_proceed">Proceed</string>
-    <string name="enter_username">Enter email Id:</string>
+    <string name="enter_username">Enter Username:</string>
     <string name="welcome">Welcome</string>
-
-    <string name="your_username">Email Id</string>
-
+    <string name="your_username">Your Username</string>
     <string name="Submit_button">Submit</string>
-    <string name="enter_password">Enter Password:</string>
-
-    <string name="Submit_button_login">Login</string>
-
+    <string name="enter_password">Enter Password</string>
     <string name="password">Password</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="signUp">sign-up</string>
+
 
     <string name="instructor">Instructor</string>
     <string name="are_you_a_student_or_an_instructor">Are you a Student or an Instructor?</string>
@@ -86,7 +82,11 @@
     <string name="comments_upload_book">Comments</string>
     <string name="upload_select_book">Select Book</string>
     <string name="upload_book_btn">Upload Book</string>
-
-
-
+    <string name="instructor_profile_name">Name:</string>
+    <string name="instructor_profile_emailid">Email Id:</string>
+    <string name="instructor_profile_degree">Degree:</string>
+    <string name="instructor_profile_currentjob">Current Job:</string>
+    <string name="instructor_profile_areaofspecialisation">Area of Specialisation:</string>
+    <string name="instructor_profile_editprofile">Edit Profile</string>
+    <string name="instructor_profile_title">Instructor</string>
 </resources>
