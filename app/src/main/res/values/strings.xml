@@ -16,4 +16,10 @@
     <string name="instructor_profile_areaofspecialisation">Area of Specialisation:</string>
     <string name="instructor_profile_editprofile">Edit Profile</string>
     <string name="instructor_profile_title">Instructor</string>
+    <string name="instructor_profile_save">Save</string>
+    <string name="instructor_profile_edit_save">Save</string>
+    <string name="instructor_profile_edit_name">Your Name</string>
+    <string name="instructor_profile_edit_degree">Your Degree</string>
+    <string name="instructor_profile_edit_currentjob">Your Current Job</string>
+    <string name="instructor_profile_edit_areaofspecialisation">Your Area of Specialisation</string>
 </resources>
