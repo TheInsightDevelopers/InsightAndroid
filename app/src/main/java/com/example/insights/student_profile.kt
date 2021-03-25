@@ -67,6 +67,6 @@ class student_profile : AppCompatActivity() {
         }
     }
     fun startVideoUpload(view: View){
-
+        startActivity(Intent(this@student_profile,UploadVideoActivity::class.java))
     }
 }
