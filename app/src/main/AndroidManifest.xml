@@ -13,18 +13,18 @@
 
     <application
         android:allowBackup="true"
+        android:banner="@color/black"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:banner="@color/black"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/NoActionBarTheme">
-
-        <activity android:name=".androidDevelopment1" />
-        <activity android:name=".mainPageNew"/>
-        <activity android:name=".studentEditProfile" />
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <activity android:name=".BookUploadActivity"></activity>
+        <activity android:name=".ForumnActivity" />
         <activity android:name=".student_profile" />
-
+        <activity android:name=".androidDevelopment1" />
+        <activity android:name=".mainPageNew" />
+        <activity android:name=".studentEditProfile" />
         <activity android:name=".Junction" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".MainActivity">
@@ -32,7 +32,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity

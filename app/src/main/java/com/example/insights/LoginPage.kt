@@ -27,6 +27,7 @@ class LoginPage : AppCompatActivity() {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this@LoginPage, "You have been logged in.", Toast.LENGTH_SHORT).show()
+
                     startActivity(Intent(this@LoginPage,mainPageNew::class.java))
                     finish()
                 } else {
