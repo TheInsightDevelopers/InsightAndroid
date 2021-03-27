@@ -3,7 +3,7 @@
     package="com.example.insights">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -18,8 +18,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
+        android:theme="@style/Theme.MaterialComponents.NoActionBar">
+        <activity android:name=".UploadVideoActivity" />
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity android:name=".BookUploadActivity"></activity>
+
         <activity android:name=".ForumnActivity" />
         <activity android:name=".student_profile" />
         <activity android:name=".androidDevelopment1" />
