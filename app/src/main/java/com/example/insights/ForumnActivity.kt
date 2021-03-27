@@ -28,8 +28,10 @@ class ForumnActivity : AppCompatActivity() {
         /*****************************************************Recycler View*****************************************************/
         val recyclerview = findViewById<RecyclerView>(R.id.chat_recycler)
         recyclerview.layoutManager = LinearLayoutManager(this)
+
         val Itemadapter = forumadapter(this, messagedata)
         recyclerview.adapter = Itemadapter
+        recyclerview.scrollToPosition((Itemadapter.getItemCount())-1)
 
 
 
@@ -73,6 +75,7 @@ class ForumnActivity : AppCompatActivity() {
                            messagedata.add(change.document.data as HashMap<String, String>)
                            val Itemadapter = forumadapter(this, messagedata)
                            recyclerview.adapter = Itemadapter
+                           recyclerview.scrollToPosition((Itemadapter.getItemCount())-1)
                        }
                     }
                 }
