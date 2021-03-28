@@ -48,7 +48,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/upload_select_book"
+                android:text="Select Book Image"
                 android:id="@+id/select_upload_book_btn"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/upload_book_comment"
