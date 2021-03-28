@@ -32,8 +32,6 @@ class HomeFragment : Fragment() {
         recyclerView.layoutManager= LinearLayoutManager(context)
         val itemAdapter= ItemAdapter(this,bookvalues)
         recyclerView.adapter=(itemAdapter)
-        val testhashmap = hashMapOf("Title" to "Amar's Books")
-        val bookslist = ArrayList<HashMap<String,String>>()
         val db = FirebaseFirestore.getInstance()
         db.collection("Books").addSnapshotListener { value, error ->
             if(error== null){
