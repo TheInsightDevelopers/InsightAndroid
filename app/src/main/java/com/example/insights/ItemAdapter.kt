@@ -15,7 +15,8 @@ class ItemAdapter(val context: HomeFragment, val items: ArrayList<HashMap<String
 
     override fun onBindViewHolder(holder: ItemAdapter.ViewHolder, position: Int) {
         val item=items.get(position)
-        holder.topicItem.text=item["Title"]
+        holder.topicItem.text=item["Book Name"]
+
     }
 
     override fun getItemCount(): Int {
