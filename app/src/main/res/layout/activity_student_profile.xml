@@ -142,9 +142,19 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:textSize="24sp"
+                android:text="@string/upload_book"
+                android:onClick="startBookUpload"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:text="@string/upload_video_student_profile"
                 android:textSize="24sp"
+                android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:onClick="startVideoUpload"
                 android:layout_marginTop="20dp"/>

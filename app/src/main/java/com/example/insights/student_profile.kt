@@ -69,4 +69,7 @@ class student_profile : AppCompatActivity() {
     fun startVideoUpload(view: View){
         startActivity(Intent(this@student_profile,UploadVideoActivity::class.java))
     }
+    fun startBookUpload(view: View){
+        startActivity(Intent(this@student_profile,BookUploadActivity::class.java))
+    }
 }
