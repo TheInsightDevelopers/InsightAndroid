@@ -71,6 +71,7 @@ class UploadVideoActivity : AppCompatActivity() {
                             .addOnCompleteListener { task ->
                                 if (task.isSuccessful) {
                                     Toast.makeText(this@UploadVideoActivity,"Upload successful",Toast.LENGTH_SHORT).show()
+                                    finish()
                                 }
                             }
                     }
