@@ -10,7 +10,6 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-
 class BookUploadActivity : AppCompatActivity() {
     val bookName : EditText=findViewById(R.id.book_name_upload)
     val userName : EditText=findViewById(R.id.book_upload_user_name)
@@ -77,7 +76,6 @@ class BookUploadActivity : AppCompatActivity() {
         }catch (e: Exception) {
             Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show()
         }
-
     }
 
 
