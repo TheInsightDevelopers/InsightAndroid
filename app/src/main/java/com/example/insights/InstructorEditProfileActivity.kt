@@ -12,7 +12,7 @@ class InstructorEditProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_instructor_edit_profile_page)
-        findViewById<Button>(R.id.SubmitButton).setOnClickListener {
+        findViewById<Button>(R.id.SaveProfileButton).setOnClickListener {
             val name = findViewById<EditText>(R.id.instructor_profile_edit_name).text.toString()
             val job = findViewById<EditText>(R.id.instructor_profile_edit_currentjob).text.toString()
             val special = findViewById<EditText>(R.id.instructor_profile_edit_areaofspecialisation).text.toString()

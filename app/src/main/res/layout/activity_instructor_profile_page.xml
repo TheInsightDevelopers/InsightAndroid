@@ -113,7 +113,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/SubmitButton"
+                android:id="@+id/startEditInstructor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
