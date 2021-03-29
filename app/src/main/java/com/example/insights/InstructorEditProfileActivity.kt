@@ -1,5 +1,6 @@
 package com.example.insights
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,10 +14,13 @@ class InstructorEditProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_instructor_edit_profile_page)
         findViewById<Button>(R.id.SaveProfileButton).setOnClickListener {
+            val progressBar = Dialog(this)
+            progressBar.setContentView(R.layout.progress_bar)
+            progressBar.show()
             val name = findViewById<EditText>(R.id.instructor_profile_edit_name).text.toString()
             val job = findViewById<EditText>(R.id.instructor_profile_edit_currentjob).text.toString()
             val special = findViewById<EditText>(R.id.instructor_profile_edit_areaofspecialisation).text.toString()
-            val degree = findViewById<EditText>(R.id.instructor_profile_edit_degree)
+            val degree = findViewById<EditText>(R.id.instructor_profile_edit_degree).text.toString()
             val userData = hashMapOf("Name" to name,
                 "Degree" to degree,
                 "Job" to job,
@@ -24,10 +28,12 @@ class InstructorEditProfileActivity : AppCompatActivity() {
                 "type" to "Instructor")
             FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(userData).addOnCompleteListener { task ->
                 if(task.isSuccessful){
+                    progressBar.hide()
                     Toast.makeText(this@InstructorEditProfileActivity,"Profile updated successfully",Toast.LENGTH_SHORT).show()
                     finish()
                 }
                 else{
+                    progressBar.hide()
                     Toast.makeText(this@InstructorEditProfileActivity,"An error Occurred",Toast.LENGTH_SHORT).show()
 
                 }
