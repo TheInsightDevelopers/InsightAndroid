@@ -9,6 +9,85 @@
     <string name="password">Password</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="signUp">sign-up</string>
+    <string name="instructor">Instructor</string>
+    <string name="are_you_a_student_or_an_instructor">Are you a Student or an Instructor?</string>
+    <string name="student">Student</string>
+
+    <string name="title_activity_main_page">Leanback Title</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="e_book">E-book</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_heading">Forgot Password</string>
+    <string name="email">Email</string>
+    <string name="reset_password">Reset Password</string>
+
+    <string name="please_wait">Please wait</string>
+    <string name="please_enter_the_following_details">Please enter the following details</string>
+    <string name="class_name">Class</string>
+    <string name="school_college">School/College</string>
+    <string name="favourite_subject">Favourite Subject</string>
+    <string name="student_name_2">Name</string>
+    <string name="student_s_profile">Student\'s Profile</string>
+    <string name="email_id">Email-id</string>
+    <string name="standard">Standard</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="institute_name">Institute Name</string>
+    <string name="favorite_subject">Favorite Subject</string>
+    <string name="book_donated">Book Donated</string>
+    <string name="edit_profile">Update Profile</string>
+    <string name="sudent_profile">Sudent Profile</string>
+
+    <string name="forum_message">Message</string>
+    <string name="student_profile">Student Profile</string>
+    <string name="edit_profile21">Edit Profile</string>
+    <string name="name22">Name</string>
+    <string name="email_id23">Email-id</string>
+    <string name="standard24">Standard</string>
+    <string name="institute_name25">Institute Name</string>
+    <string name="favorite_subject26">Favorite Subject</string>
+    <string name="name31">Name</string>
+    <string name="email_id32">Email-id</string>
+    <string name="standard33">Standard</string>
+    <string name="institute_name34">Institute Name</string>
+    <string name="favorite_subject35">Favorite Subject</string>
+    <string name="title_home">Home</string>
+    <string name="name222">Name</string>
+    <string name="email_id223">Email-ID</string>
+    <string name="standard224">Standard</string>
+    <string name="institute_name225">Institute Name</string>
+    <string name="favourite_subject226">Favourite Subject</string>
+    <string name="name333">Name</string>
+    <string name="email_id333">Email-Id</string>
+    <string name="standard333">Standard</string>
+    <string name="institute_name333">Institute Name</string>
+    <string name="favourite_subject333">Favourite Subject</string>
+    <string name="favourite_subject4444">Favourite Subject</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="upload_video_student_profile">Upload Video</string>
+    <string name="video_title_upload">Enter Title for Video</string>
+    <string name="your_name_upload">Your Name</string>
+    <string name="comments">Comments</string>
+    <string name="select_video_upload">Select Video</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="processing">Processing</string>
+    <string name="book_name_upload">Enter Book Name</string>
+    <string name="upload_book_title">Upload Book</string>
+    <string name="your_name_upload_book">Your Name</string>
+    <string name="comments_upload_book">Comments</string>
+    <string name="upload_select_book">Select Book</string>
+    <string name="upload_book_btn">Upload Book</string>
+
     <string name="instructor_profile_name">Name:</string>
     <string name="instructor_profile_emailid">Email Id:</string>
     <string name="instructor_profile_degree">Degree:</string>
@@ -16,10 +95,12 @@
     <string name="instructor_profile_areaofspecialisation">Area of Specialisation:</string>
     <string name="instructor_profile_editprofile">Edit Profile</string>
     <string name="instructor_profile_title">Instructor</string>
+
     <string name="instructor_profile_save">Save</string>
     <string name="instructor_profile_edit_save">Save</string>
     <string name="instructor_profile_edit_name">Your Name</string>
     <string name="instructor_profile_edit_degree">Your Degree</string>
     <string name="instructor_profile_edit_currentjob">Your Current Job</string>
     <string name="instructor_profile_edit_areaofspecialisation">Your Area of Specialisation</string>
+    <string name="upload_book">Upload</string>
 </resources>
