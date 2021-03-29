@@ -12,7 +12,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="435dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:elevation="10dp"
@@ -21,7 +21,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="436dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -35,8 +35,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="331dp"
-                android:layout_height="60dp"
+                android:id="@+id/instructor_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:gravity="start"
                 android:text="@string/instructor_profile_name"
                 android:textColor="@color/black"
@@ -44,45 +45,114 @@
                 android:textStyle="normal" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="331dp"
-                android:layout_height="60dp"
+                android:id="@+id/instructor_profile_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/instructor_profile_emailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/instructor_profile_emailid"
                 android:textColor="#050505"
                 android:textSize="24sp" />
 
             <TextView
-                android:layout_width="331dp"
-                android:layout_height="60dp"
+                android:id="@+id/instructor_profile_emailid_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/instructor_profile_degree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="start"
                 android:text="@string/instructor_profile_degree"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/instructor_profile_degree_tv"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/instructor_profile_currentjob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/instructor_profile_currentjob"
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/instructor_profile_currentjob_tv"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/instructor_profile_areaofspecialisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/instructor_profile_areaofspecialisation"
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
+            <TextView
+                android:id="@+id/instructor_profile_areaofspecialisation_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
             <Button
-                android:id="@+id/SubmitButton"
+                android:id="@+id/instructor_profile_editprofile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginStart="10dp"
                 android:importantForAccessibility="no"
                 android:text="@string/instructor_profile_editprofile" />
+
+            <Button
+                android:id="@+id/instructor_profile_uploadvideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:importantForAccessibility="no"
+                android:text="@string/upload_video" />
+
+            <Button
+                android:id="@+id/instructor_profile_uploadbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:importantForAccessibility="no"
+                android:text="@string/upload_book_btn" />
+
+            <Button
+                android:id="@+id/instructor_profile_signout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:importantForAccessibility="no"
+                android:text="@string/sign_out" />
+
+            <Button
+                android:id="@+id/instructor_profile_deleteaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:importantForAccessibility="no"
+                android:text="@string/delete_account"
+                android:textColor="#FF0000" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

@@ -34,7 +34,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/SubmitButton"
+                android:id="@+id/instructor_profile_editprofile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
