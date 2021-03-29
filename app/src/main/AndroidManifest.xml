@@ -3,7 +3,8 @@
     package="com.example.insights">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -19,11 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.NoActionBar">
+        <activity android:name=".pdfViewActivity"></activity>
         <activity android:name=".UploadVideoActivity" />
-        
-
-        <activity android:name=".BookUploadActivity"></activity>
-
+        <activity android:name=".BookUploadActivity" />
         <activity android:name=".ForumnActivity" />
         <activity android:name=".student_profile" />
         <activity android:name=".androidDevelopment1" />

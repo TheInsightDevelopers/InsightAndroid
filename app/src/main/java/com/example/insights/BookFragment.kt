@@ -2,6 +2,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,8 +25,8 @@ class BookFragment:Fragment() {
 
         var recyclerView: RecyclerView = root.findViewById<RecyclerView>(R.id.recyclerview)
         recyclerView.layoutManager= LinearLayoutManager(context)
-        val itemAdapter= ItemAdapter(this,bookvalues)
-        recyclerView.adapter=(itemAdapter)
+        //val itemAdapter= ItemAdapter(this,bookvalues)
+        //recyclerView.adapter=(itemAdapter)
         val db = FirebaseFirestore.getInstance()
         db.collection("Books").addSnapshotListener { value, error ->
             if(error== null){
@@ -43,6 +44,8 @@ class BookFragment:Fragment() {
 
         return root
     }
+
+
 
 
 

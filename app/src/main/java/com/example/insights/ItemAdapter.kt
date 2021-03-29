@@ -1,26 +1,29 @@
 package com.example.insights
 
 import BookFragment
+import android.annotation.SuppressLint
+import android.app.PendingIntent.getActivity
 import android.content.Intent
 import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
+import com.google.firestore.proto.BundleElement
 import java.io.File
 import java.net.URL
+import java.security.AccessController.getContext
 
 class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String,String>>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
     lateinit var url: String
     lateinit var uri: Uri
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ViewHolder {
         return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.home_custom_row,parent,false))
     }
@@ -34,6 +37,25 @@ class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String
         dataReference.getFile(localFile).addOnSuccessListener {
 
         }
+        holder.itemView.setOnClickListener(object :View.OnClickListener{
+
+            override fun onClick(view: View) {
+
+                //val intent=Intent(view.context,pdfViewActivity::class.java)
+                //startActivity(view.context,intent, Bundle.EMPTY)
+
+
+                //val position:Int=adapterPosition
+                val intent= Intent(Intent.ACTION_VIEW)
+                intent.type = "application/pdf"
+                intent.data = uri
+                startActivity(view.context,Intent.createChooser(intent,"Open PDF"), Bundle.EMPTY)
+
+
+
+            }
+        })
+
     }
 
     override fun getItemCount(): Int {
@@ -44,22 +66,16 @@ class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String
         lateinit var uriPdf: Uri
         val topicItem: TextView =view.findViewById(R.id.topic_name)
         val cardViewItem: CardView =view.findViewById(R.id.card_view_item)
-        init {
-            view.setOnClickListener { v:View->
-                val position:Int=adapterPosition
-                val intent= Intent(Intent.ACTION_VIEW)
-                intent.setType("application/pdf")
-
-                intent.setData(uri)
 
 
 
-            }
         }
+
 
     }
 
 
-}
+
+
 
 
