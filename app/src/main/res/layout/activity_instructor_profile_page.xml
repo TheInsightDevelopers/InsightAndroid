@@ -12,7 +12,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="429dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:elevation="10dp"
@@ -21,7 +21,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -36,8 +36,8 @@
 
             <TextView
                 android:id="@+id/instructor_profile_name"
-                android:layout_width="331dp"
-                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:gravity="start"
                 android:text="@string/instructor_profile_name"
                 android:textColor="@color/black"
@@ -45,35 +45,70 @@
                 android:textStyle="normal" />
 
             <TextView
+                android:id="@+id/instructor_profile_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
                 android:id="@+id/instructor_profile_emailid"
-                android:layout_width="331dp"
-                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/instructor_profile_emailid"
                 android:textColor="#050505"
                 android:textSize="24sp" />
 
             <TextView
+                android:id="@+id/instructor_profile_emailid_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
                 android:id="@+id/instructor_profile_degree"
-                android:layout_width="331dp"
-                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="start"
                 android:text="@string/instructor_profile_degree"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
+                android:id="@+id/instructor_profile_degree_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
                 android:id="@+id/instructor_profile_currentjob"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:text="@string/instructor_profile_currentjob"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/instructor_profile_currentjob_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/instructor_profile_areaofspecialisation"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:text="@string/instructor_profile_areaofspecialisation"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/instructor_profile_areaofspecialisation_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
