@@ -1,5 +1,6 @@
 package com.example.insights
 
+import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -21,16 +22,22 @@ class LoginPage : AppCompatActivity() {
         }
         val loginBtn = findViewById<Button>(R.id.loginButton)
         loginBtn.setOnClickListener {
+            val progressbar = Dialog(this)
+            progressbar.setContentView(R.layout.progress_bar)
+            progressbar.show()
             val email = findViewById<EditText>(R.id.login_email_id).text.toString()
             val password = findViewById<EditText>(R.id.login_password).text.toString()
             //Login with firebase
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this@LoginPage, "You have been logged in.", Toast.LENGTH_SHORT).show()
+
                     startActivity(Intent(this@LoginPage,mainPageNew::class.java))
+                    progressbar.hide()
                     finish()
                 } else {
                     Toast.makeText(this@LoginPage, "Login Failed.", Toast.LENGTH_SHORT).show()
+                    progressbar.hide()
                 }
             }
         }
