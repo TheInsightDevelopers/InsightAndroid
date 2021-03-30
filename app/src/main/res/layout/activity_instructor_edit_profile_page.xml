@@ -71,7 +71,7 @@
                 android:padding="10dp" />
 
             <Button
-                android:id="@+id/instructor_profile_editprofile"
+                android:id="@+id/SaveProfileButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
