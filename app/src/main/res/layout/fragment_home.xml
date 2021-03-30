@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Courses Offered :"
+        android:text="Video Lectures"
         android:textColor="@color/black"
         android:textSize="25sp" />
     <androidx.recyclerview.widget.RecyclerView
