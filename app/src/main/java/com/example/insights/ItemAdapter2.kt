@@ -2,11 +2,15 @@ package com.example.insights
 
 import HomeFragment
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class ItemAdapter2(val context: HomeFragment, val items :ArrayList<HashMap<String,String>>): RecyclerView.Adapter<ItemAdapter2.ViewHolder>() {
@@ -19,6 +23,22 @@ class ItemAdapter2(val context: HomeFragment, val items :ArrayList<HashMap<Strin
         val item=items.get(position)
         holder.videoName.text=item["Title"]
         Url = item["VideoUrl"].toString()
+        holder.itemView.setOnClickListener(object : View.OnClickListener {
+
+            override fun onClick(view: View) {
+
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.type = "application/video"
+                intent.data = Uri.parse(Url)
+                ContextCompat.startActivity(
+                    view.context,
+                    Intent.createChooser(intent, "Open Video"),
+                    Bundle.EMPTY
+                )
+
+
+            }
+        })
     }
 
     override fun getItemCount(): Int {
