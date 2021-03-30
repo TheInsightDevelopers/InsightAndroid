@@ -30,10 +30,10 @@ class BookUploadActivity : AppCompatActivity() {
                 progressBar.show()
 
                 val dRef : StorageReference = FirebaseStorage.getInstance().reference
-                dRef.child("Book_Image"+System.currentTimeMillis()
+                dRef.child("Book_Pdf"+System.currentTimeMillis()
                     .toString()).putFile(uriImage!!).addOnSuccessListener { taskSnapshot ->
                     taskSnapshot.metadata!!.reference!!.downloadUrl.addOnSuccessListener { url1 ->
-                        dRef.child("Book_pdf"+System.currentTimeMillis().toString()).putFile(uriPdf!!).addOnSuccessListener { taskSnapshot1 ->
+                        dRef.child("Book_Image"+System.currentTimeMillis().toString()).putFile(uriPdf!!).addOnSuccessListener { taskSnapshot1 ->
                             taskSnapshot1.metadata!!.reference!!.downloadUrl.addOnSuccessListener { url2 ->
                                 val bookName =findViewById<EditText>(R.id.book_name_upload)
                                 val userName =findViewById<EditText>(R.id.book_upload_user_name)
@@ -45,8 +45,8 @@ class BookUploadActivity : AppCompatActivity() {
                                 val bookData = hashMapOf("Book Name" to bookNameValue,
                                     "Uploader Name" to userNameValue,
                                     "Comments" to commentsValue,
-                                    "ImageUrl" to url1.toString(),
-                                    "PdfUrl" to url2.toString())
+                                    "ImageUrl" to url2.toString(),
+                                    "PdfUrl" to url1.toString())
                                 FirebaseFirestore.getInstance().collection("Books").document(System.currentTimeMillis().toString()).set(bookData).addOnCompleteListener { task ->
                                     if(task.isSuccessful){
                                         Toast.makeText(this@BookUploadActivity,"Upload Success :)",Toast.LENGTH_SHORT).show()
