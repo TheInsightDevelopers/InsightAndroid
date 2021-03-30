@@ -40,7 +40,6 @@ class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String
         holder.itemView.setOnClickListener(object :View.OnClickListener{
 
             override fun onClick(view: View) {
-
                 //val intent=Intent(view.context,pdfViewActivity::class.java)
                 //startActivity(view.context,intent, Bundle.EMPTY)
 
@@ -48,9 +47,8 @@ class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String
                 //val position:Int=adapterPosition
                 val intent= Intent(Intent.ACTION_VIEW)
                 intent.type = "application/pdf"
-                intent.data = uri
+                intent.data = Uri.parse(url)
                 startActivity(view.context,Intent.createChooser(intent,"Open PDF"), Bundle.EMPTY)
-
 
 
             }
