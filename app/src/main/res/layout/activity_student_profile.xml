@@ -146,6 +146,7 @@
                 android:background="@color/transparent"
                 android:textSize="24sp"
                 android:text="Book Upload"
+                android:textColor="@color/white"
                 android:onClick="startBookUpload"
                 />
             <com.google.android.material.button.MaterialButton
