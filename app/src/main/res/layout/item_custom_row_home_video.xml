@@ -21,11 +21,7 @@
             android:background="@drawable/green_grad"
             tools:ignore="UseCompoundDrawables">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:contentDescription="@string/app_name"
-                android:src="@mipmap/ic_launcher" />
+
 
             <TextView
                 android:id="@+id/video_name"
