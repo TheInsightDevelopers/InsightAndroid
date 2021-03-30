@@ -34,8 +34,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/instructor_profile_title"
-                    android:textColor="#0C0C0C"
-                    android:textSize="30sp"
+                    android:textColor="#0481BA"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="start"
                     android:text="@string/instructor_profile_name"
-                    android:textColor="@color/black"
+                    android:textColor="#0481BA"
                     android:textSize="24sp"
                     android:textStyle="normal" />
 
@@ -52,7 +52,7 @@
                     android:id="@+id/instructor_profile_name_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
@@ -60,14 +60,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/instructor_profile_emailid"
-                    android:textColor="#050505"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/instructor_profile_emailid_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
@@ -76,14 +76,14 @@
                     android:layout_height="wrap_content"
                     android:gravity="start"
                     android:text="@string/instructor_profile_degree"
-                    android:textColor="@color/black"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/instructor_profile_degree_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
@@ -91,14 +91,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/instructor_profile_currentjob"
-                    android:textColor="#000000"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/instructor_profile_currentjob_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
@@ -106,14 +106,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/instructor_profile_areaofspecialisation"
-                    android:textColor="#000000"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/instructor_profile_areaofspecialisation_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:textColor="#0481BA"
                     android:textSize="24sp" />
 
                 <Button
@@ -121,38 +121,47 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
                     android:importantForAccessibility="no"
-                    android:text="@string/instructor_profile_editprofile" />
+                    android:text="@string/instructor_profile_editprofile"
+                    android:textColor="#0481BA" />
 
                 <Button
                     android:id="@+id/instructor_profile_uploadvideo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
                     android:importantForAccessibility="no"
-                    android:text="@string/upload_video" />
+                    android:text="@string/upload_video"
+                    android:textColor="#0481BA" />
 
                 <Button
                     android:id="@+id/instructor_profile_uploadbook"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
                     android:importantForAccessibility="no"
-                    android:text="@string/upload_book_btn" />
+                    android:text="@string/upload_book_btn"
+                    android:textColor="#0481BA" />
 
                 <Button
                     android:id="@+id/instructor_profile_signout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
                     android:importantForAccessibility="no"
-                    android:text="@string/sign_out" />
+                    android:text="@string/sign_out"
+                    android:textColor="#0481BA" />
 
                 <Button
                     android:id="@+id/instructor_profile_deleteaccount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
                     android:importantForAccessibility="no"
                     android:text="@string/delete_account"
                     android:textColor="#FF0000" />
