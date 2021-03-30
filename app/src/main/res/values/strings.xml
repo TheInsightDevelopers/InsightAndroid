@@ -9,8 +9,6 @@
     <string name="password">Password</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="signUp">sign-up</string>
-
-
     <string name="instructor">Instructor</string>
     <string name="are_you_a_student_or_an_instructor">Are you a Student or an Instructor?</string>
     <string name="student">Student</string>
@@ -89,6 +87,7 @@
     <string name="comments_upload_book">Comments</string>
     <string name="upload_select_book">Select Book</string>
     <string name="upload_book_btn">Upload Book</string>
+
     <string name="instructor_profile_name">Name:</string>
     <string name="instructor_profile_emailid">Email Id:</string>
     <string name="instructor_profile_degree">Degree:</string>
@@ -96,6 +95,13 @@
     <string name="instructor_profile_areaofspecialisation">Area of Specialisation:</string>
     <string name="instructor_profile_editprofile">Edit Profile</string>
     <string name="instructor_profile_title">Instructor</string>
+
+    <string name="instructor_profile_save">Save</string>
+    <string name="instructor_profile_edit_save">Save</string>
+    <string name="instructor_profile_edit_name">Your Name</string>
+    <string name="instructor_profile_edit_degree">Your Degree</string>
+    <string name="instructor_profile_edit_currentjob">Your Current Job</string>
+    <string name="instructor_profile_edit_areaofspecialisation">Your Area of Specialisation</string>
     <string name="upload_book">Upload</string>
     <string name="your_book_would_be_downloaded_to_downloads">Your Book would be Downloaded to Downloads</string>
 </resources>

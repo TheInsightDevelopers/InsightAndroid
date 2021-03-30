@@ -40,14 +40,14 @@ class mainPageNew : AppCompatActivity() {
                         if (type == "Student") {
                             startActivity(Intent(this@mainPageNew, student_profile::class.java))
                         }
+                        else{
+                            startActivity(Intent(this@mainPageNew,InstructorProfileActivity::class.java))
+                        }
                     }
                 }
         }
         findViewById<ImageButton>(R.id.forum_start_btn).setOnClickListener {
             startActivity(Intent(this@mainPageNew, ForumnActivity::class.java))
-        }
-        findViewById<ImageButton>(R.id.main_profile_ic).setOnClickListener {
-            startActivity(Intent(this@mainPageNew,student_profile::class.java))
         }
 
 
