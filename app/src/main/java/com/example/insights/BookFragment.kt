@@ -30,7 +30,7 @@ class BookFragment : Fragment() {
         db.collection("Books").addSnapshotListener { value, error ->
             if (error == null) {
                 if (value != null) {
-                    for (change in value!!.documentChanges) {
+                    for (change in value.documentChanges) {
                         if (change.type == DocumentChange.Type.ADDED) {
                             bookvalues.add(change.document.data as HashMap<String, String>)
                             val Itemadapter = ItemAdapter(this, bookvalues)

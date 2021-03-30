@@ -94,9 +94,9 @@ class InstructorProfileActivity : AppCompatActivity() {
                     val data = documentSnapshot.data
                     name_tv.text = data!!.get("Name").toString()
                     email_tv.text = FirebaseAuth.getInstance().currentUser.email
-                    degree_tv.text = data!!.get("Degree").toString()
-                    job_tv.text = data!!.get("Job").toString()
-                    special_tv.text = data!!.get("Specialisation").toString()
+                    degree_tv.text = data.get("Degree").toString()
+                    job_tv.text = data.get("Job").toString()
+                    special_tv.text = data.get("Specialisation").toString()
 
                 }
             }

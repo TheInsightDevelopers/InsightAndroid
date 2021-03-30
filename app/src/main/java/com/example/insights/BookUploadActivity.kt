@@ -34,10 +34,10 @@ class BookUploadActivity : AppCompatActivity() {
                 dRef.child(
                     "Book_Pdf" + System.currentTimeMillis()
                         .toString()
-                ).putFile(uriImage!!).addOnSuccessListener { taskSnapshot ->
+                ).putFile(uriImage).addOnSuccessListener { taskSnapshot ->
                     taskSnapshot.metadata!!.reference!!.downloadUrl.addOnSuccessListener { url1 ->
                         dRef.child("Book_Image" + System.currentTimeMillis().toString())
-                            .putFile(uriPdf!!).addOnSuccessListener { taskSnapshot1 ->
+                            .putFile(uriPdf).addOnSuccessListener { taskSnapshot1 ->
                             taskSnapshot1.metadata!!.reference!!.downloadUrl.addOnSuccessListener { url2 ->
                                 val bookName = findViewById<EditText>(R.id.book_name_upload)
                                 val userName = findViewById<EditText>(R.id.book_upload_user_name)
@@ -82,7 +82,7 @@ class BookUploadActivity : AppCompatActivity() {
         uploadBtn.setOnClickListener(View.OnClickListener { view: View? ->
             val intent = Intent()
             intent.type = "application/pdf"
-            intent.setAction(Intent.ACTION_GET_CONTENT)
+            intent.action = Intent.ACTION_GET_CONTENT
             startActivityForResult(Intent.createChooser(intent, "Select Pdf"), PDF)
 
         })
@@ -90,7 +90,7 @@ class BookUploadActivity : AppCompatActivity() {
         selectImageBtn.setOnClickListener(View.OnClickListener { view: View? ->
             val intent = Intent()
             intent.type = "image/*"
-            intent.setAction(Intent.ACTION_GET_CONTENT)
+            intent.action = Intent.ACTION_GET_CONTENT
             startActivityForResult(Intent.createChooser(intent, "Select Image"), IMAGE)
 
 

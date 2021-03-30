@@ -27,7 +27,7 @@ class ForumnActivity : AppCompatActivity() {
 
         val Itemadapter = forumadapter(this, messagedata)
         recyclerview.adapter = Itemadapter
-        recyclerview.scrollToPosition((Itemadapter.getItemCount()) - 1)
+        recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
 
 
         /***************************************Sending Message***********************************************/
@@ -65,12 +65,12 @@ class ForumnActivity : AppCompatActivity() {
         db.collection("message").addSnapshotListener { value, error ->
             if (error == null) {
                 if (value != null) {
-                    for (change in value!!.documentChanges) {
+                    for (change in value.documentChanges) {
                         if (change.type == DocumentChange.Type.ADDED) {
                             messagedata.add(change.document.data as HashMap<String, String>)
                             val Itemadapter = forumadapter(this, messagedata)
                             recyclerview.adapter = Itemadapter
-                            recyclerview.scrollToPosition((Itemadapter.getItemCount()) - 1)
+                            recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
                         }
                     }
                 }
