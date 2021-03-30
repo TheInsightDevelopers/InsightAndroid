@@ -30,7 +30,6 @@
         <activity android:name=".BookUploadActivity" />
         <activity android:name=".ForumnActivity" />
         <activity android:name=".student_profile" />
-        <activity android:name=".androidDevelopment1" />
         <activity android:name=".mainPageNew" />
         <activity android:name=".studentEditProfile" />
         <activity android:name=".Junction" />
