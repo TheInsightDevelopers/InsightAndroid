@@ -19,13 +19,6 @@
             android:text="Books"
             android:textColor="@color/black"
             android:textSize="40sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/your_book_would_be_downloaded_to_downloads"
-            android:textSize="20sp" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
