@@ -55,7 +55,7 @@ class mainPageNew : AppCompatActivity() {
             when (it.itemId) {
                 R.id.home -> setCurrentFragment(homeFragment)
                 R.id.book -> setCurrentFragment(bookFragment)
-                R.id.profile -> setCurrentFragment(profileFragment)
+
 
             }
             true

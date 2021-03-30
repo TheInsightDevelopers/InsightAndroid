@@ -20,8 +20,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.NoActionBar">
+
+        <activity android:name=".pdfViewActivity"></activity>
+
         <activity android:name=".InstructorEditProfileActivity"></activity>
         <activity android:name=".InstructorProfileActivity" />
+
         <activity android:name=".UploadVideoActivity" />
         <activity android:name=".BookUploadActivity" />
         <activity android:name=".ForumnActivity" />

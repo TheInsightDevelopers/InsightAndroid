@@ -103,4 +103,5 @@
     <string name="instructor_profile_edit_currentjob">Your Current Job</string>
     <string name="instructor_profile_edit_areaofspecialisation">Your Area of Specialisation</string>
     <string name="upload_book">Upload</string>
+    <string name="your_book_would_be_downloaded_to_downloads">Your Book would be Downloaded to Downloads</string>
 </resources>
