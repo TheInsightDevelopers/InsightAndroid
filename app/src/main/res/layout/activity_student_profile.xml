@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:paddingStart="20dp"
-        android:paddingEnd="1dp"
         android:paddingLeft="0dp"
+        android:paddingEnd="1dp"
         android:paddingRight="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +38,7 @@
                 app:layout_constraintHorizontal_bias="0.434"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
@@ -139,26 +140,27 @@
                 android:textColor="#D81B60"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@color/transparent"
-                android:textSize="24sp"
+                android:onClick="startBookUpload"
                 android:text="Book Upload"
                 android:textColor="@color/white"
-                android:onClick="startBookUpload"
-                />
+                android:textSize="24sp" />
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/transparent"
-                android:text="@string/upload_video_student_profile"
-                android:textSize="24sp"
-                android:textColor="@color/white"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/transparent"
                 android:onClick="startVideoUpload"
-                android:layout_marginTop="20dp"/>
+                android:text="@string/upload_video_student_profile"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/stud_profile_update_btn_act"
@@ -179,24 +181,23 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@color/transparent"
+                android:onClick="signOutUser"
                 android:text="@string/sign_out"
                 android:textColor="@color/white"
-                android:onClick="signOutUser"
-                android:textSize="24sp"
-                />
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
                 android:background="@color/transparent"
+                android:onClick="deleteAccount"
                 android:text="@string/delete_account"
                 android:textAlignment="center"
-                android:textColor = "#E80909"
+                android:textColor="#E80909"
                 android:textColorHighlight="#EC1111"
                 android:textSize="24sp"
-                android:onClick="deleteAccount"
-                android:layout_marginBottom="40dp"
                 android:textStyle="bold" />
 
         </LinearLayout>

@@ -11,6 +11,5 @@
         android:icon="@drawable/ic_baseline_menu_book_24"
         android:title="Books" />
 
- 
 
 </menu>

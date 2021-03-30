@@ -1,39 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_marginEnd="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="100dp"
-        android:padding="40dp"
         android:layout_margin="20dp"
-        app:cardCornerRadius="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="100dp"
         android:outlineAmbientShadowColor="@color/purple_500"
-        app:cardBackgroundColor="@color/search_opaque">
+        android:padding="40dp"
+        app:cardBackgroundColor="@color/search_opaque"
+        app:cardCornerRadius="60dp">
+
         <LinearLayout
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_height="wrap_content">
+            android:padding="10dp">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/forum_sender_tv"
-                android:textSize="18sp"
-                android:textColor="@color/grey"
-                android:text="Sender"
-                />
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Sender"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <TextView
                 android:id="@+id/forum_message"
-                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:text="message"/>
+                android:text="message"
+                android:textSize="15sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

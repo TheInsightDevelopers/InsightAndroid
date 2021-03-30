@@ -31,29 +31,39 @@ class Instructor : AppCompatActivity() {
                 "Specialisation" to special,
                 "type" to "Instructor"
             )
-            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
-                if(task.isSuccessful){
-   FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().currentUser.uid).set(data).addOnCompleteListener { task1 ->
-                        if(task1.isSuccessful){
-                            progressBar.hide()
-                            Toast.makeText(this@Instructor,"Your details have saved successfully",Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this@Instructor,mainPageNew::class.java))
-                            finish()
-                        }
-                        else{
-                            progressBar.hide()
-                            Toast.makeText(this@Instructor,"An error occurred",Toast.LENGTH_SHORT).show()
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        FirebaseFirestore.getInstance().collection("Users")
+                            .document(FirebaseAuth.getInstance().currentUser.uid).set(data)
+                            .addOnCompleteListener { task1 ->
+                                if (task1.isSuccessful) {
+                                    progressBar.hide()
+                                    Toast.makeText(
+                                        this@Instructor,
+                                        "Your details have saved successfully",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                    startActivity(Intent(this@Instructor, mainPageNew::class.java))
+                                    finish()
+                                } else {
+                                    progressBar.hide()
+                                    Toast.makeText(
+                                        this@Instructor,
+                                        "An error occurred",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
 
-                        }
+                                }
+                            }
+
+
+                    } else {
+                        progressBar.hide()
+                        Toast.makeText(this@Instructor, "Registration Failed", Toast.LENGTH_SHORT)
+                            .show()
                     }
-
-
                 }
-                else{
-                    progressBar.hide()
-                    Toast.makeText(this@Instructor,"Registration Failed", Toast.LENGTH_SHORT).show()
-                }
-            }
         }
     }
 }

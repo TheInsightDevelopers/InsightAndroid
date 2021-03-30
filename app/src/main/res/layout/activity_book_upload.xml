@@ -5,73 +5,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BookUploadActivity">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
+                android:id="@+id/upload_book_title_act"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/upload_book_title"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:id="@+id/upload_book_title_act"
-                android:text="@string/upload_book_title"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/book_name_upload"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/upload_book_title_act"
                 android:hint="@string/book_name_upload"
-                android:id="@+id/book_name_upload"/>
+                app:layout_constraintTop_toBottomOf="@id/upload_book_title_act" />
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/book_upload_user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/book_upload_user_name"
-                app:layout_constraintTop_toBottomOf="@id/book_name_upload"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:hint="@string/your_name_upload_book"
-                />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/book_name_upload" />
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/upload_book_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/comments_upload_book"
-                android:id="@+id/upload_book_comment"
-                app:layout_constraintTop_toBottomOf="@id/book_upload_user_name"/>
+                app:layout_constraintTop_toBottomOf="@id/book_upload_user_name" />
+
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Select Book Image"
                 android:id="@+id/select_upload_book_image"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/upload_book_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
+                android:text="Select Book Image"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/select_upload_book_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/upload_book_comment" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/select_book"
-                android:layout_marginTop="40dp"
-                android:text="Select Book"/>
-            <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/select_book"
-                android:text="@string/upload_book"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp"
+                android:text="Select Book"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/select_upload_book_image" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/book_upload_btn"
-                android:layout_marginTop="30dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/upload_book"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/select_book" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
