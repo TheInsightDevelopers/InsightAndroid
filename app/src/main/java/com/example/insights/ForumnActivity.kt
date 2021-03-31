@@ -28,6 +28,10 @@ class ForumnActivity : AppCompatActivity() {
         val Itemadapter = forumadapter(this, messagedata)
         recyclerview.adapter = Itemadapter
         recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
+        findViewById<EditText>(R.id.message_input).setOnClickListener {
+            recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
+
+        }
 
 
         /***************************************Sending Message***********************************************/
