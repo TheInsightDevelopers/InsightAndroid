@@ -40,22 +40,10 @@ class student_profile : AppCompatActivity() {
         findViewById<Button>(R.id.stud_profile_update_btn_act).setOnClickListener {
             startActivity(Intent(this@student_profile, studentEditProfile::class.java))
         }
-        findViewById<Button>(R.id.student_sign_out).setOnClickListener {
-            FirebaseAuth.getInstance().signOut()
-            startActivity(Intent(this@student_profile, LoginPage::class.java))
-            finish()
-            Toast.makeText(this@student_profile, "You have been Logged Out", Toast.LENGTH_SHORT)
-                .show()
-
-        }
 
     }
 
-    fun signOutUser(view: View) {
-        FirebaseAuth.getInstance().signOut()
-        startActivity(Intent(this@student_profile, LoginPage::class.java))
-        finish()
-    }
+
 
     fun deleteAccount(view: View) {
         FirebaseFirestore.getInstance().collection("Users")

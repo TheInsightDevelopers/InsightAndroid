@@ -22,11 +22,10 @@ class ItemAdapter2(val context: HomeFragment, val items :ArrayList<HashMap<Strin
     override fun onBindViewHolder(holder: ItemAdapter2.ViewHolder, position: Int) {
         val item=items.get(position)
         holder.videoName.text=item["Title"]
-        Url = item["VideoUrl"].toString()
         holder.itemView.setOnClickListener(object : View.OnClickListener {
 
             override fun onClick(view: View) {
-
+                Url = item["VideoUrl"].toString()
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.type = "application/video"
                 intent.data = Uri.parse(Url)

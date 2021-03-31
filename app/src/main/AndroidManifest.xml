@@ -19,39 +19,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/NoActionBarTheme">
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
 
-        <activity android:name=".pdfViewActivity"
-            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".pdfViewActivity" />
 
-        <activity android:name=".InstructorEditProfileActivity"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".InstructorProfileActivity"
-            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".InstructorEditProfileActivity" />
+        <activity android:name=".InstructorProfileActivity" />
 
-        <activity android:name=".UploadVideoActivity"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".BookUploadActivity"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".ForumnActivity"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".student_profile"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".mainPageNew"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".studentEditProfile"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".Junction"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".ForgotPasswordActivity"
-            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".UploadVideoActivity" />
+        <activity android:name=".BookUploadActivity" />
+        <activity android:name=".ForumnActivity" />
+        <activity android:name=".student_profile" />
+        <activity android:name=".mainPageNew" />
+        <activity android:name=".studentEditProfile" />
+        <activity android:name=".Junction" />
+        <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".LoginPage"
@@ -61,7 +49,6 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Instructor"
-
             android:windowSoftInputMode="adjustResize" />
     </application>
 
