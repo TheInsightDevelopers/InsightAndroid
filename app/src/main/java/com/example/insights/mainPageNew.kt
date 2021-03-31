@@ -5,7 +5,9 @@ import HomeFragment
 import ProfileFragment
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -69,6 +71,12 @@ class mainPageNew : AppCompatActivity() {
             replace(R.id.flFragment, fragment)
             commit()
         }
+    fun signOutUser(view: View) {
+        FirebaseAuth.getInstance().signOut()
+        startActivity(Intent(this@mainPageNew, LoginPage::class.java))
+        Toast.makeText(this@mainPageNew,"Signned Out SuccessFully",Toast.LENGTH_SHORT).show()
+        finish()
+    }
 
 }
 

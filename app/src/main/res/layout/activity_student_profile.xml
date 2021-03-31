@@ -183,6 +183,7 @@
                 android:background="@color/transparent"
                 android:onClick="signOutUser"
                 android:text="@string/sign_out"
+                android:visibility="gone"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
 
@@ -194,6 +195,7 @@
                 android:background="@color/transparent"
                 android:onClick="deleteAccount"
                 android:text="@string/delete_account"
+                android:visibility="gone"
                 android:textAlignment="center"
                 android:textColor="#E80909"
                 android:textColorHighlight="#EC1111"
