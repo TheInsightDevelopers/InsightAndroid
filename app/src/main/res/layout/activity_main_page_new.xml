@@ -23,18 +23,6 @@
         android:src="@drawable/ic_profile_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/transparent"
-        android:onClick="signOutUser"
-        android:text="@string/sign_out"
-        android:id="@+id/main_signout"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
 
     <FrameLayout
         android:id="@+id/flFragment"
@@ -44,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_signout" />
+        app:layout_constraintTop_toBottomOf="@id/main_profile_ic" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

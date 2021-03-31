@@ -21,7 +21,14 @@ class InstructorProfileActivity : AppCompatActivity() {
             startActivity(Intent(this@InstructorProfileActivity, BookUploadActivity::class.java))
         }
         findViewById<Button>(R.id.instructor_profile_signout).setOnClickListener {
-
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this@InstructorProfileActivity, LoginPage::class.java))
+            finish()
+            Toast.makeText(
+                this@InstructorProfileActivity,
+                "You have been Logged Out",
+                Toast.LENGTH_SHORT
+            ).show()
         }
         findViewById<Button>(R.id.instructor_profile_deleteaccount).setOnClickListener {
             val progressBar = Dialog(this)

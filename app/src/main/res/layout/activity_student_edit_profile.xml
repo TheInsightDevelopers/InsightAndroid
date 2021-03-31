@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/images__3_"
     tools:context=".studentEditProfile">
 
     <TextView
@@ -15,7 +16,7 @@
         android:text="@string/edit_profile21"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="@color/black"
+        android:textColor="#D81B60"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"

@@ -106,7 +106,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:hint="Confirm Password"
-                        android:id="@+id/instructor_register_password_con"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 

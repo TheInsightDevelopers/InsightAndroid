@@ -25,13 +25,6 @@ class BookUploadActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_upload)
         findViewById<Button>(R.id.book_upload_btn).setOnClickListener {
-            val bookName = findViewById<EditText>(R.id.book_name_upload)
-            val userName = findViewById<EditText>(R.id.book_upload_user_name)
-            val comments = findViewById<EditText>((R.id.upload_book_comment))
-
-            val bookNameValue = bookName.text.toString()
-            val userNameValue = userName.text.toString()
-            val commentsValue = comments.text.toString()
             if (uriImage != null && uriPdf != null) {
                 val progressBar = Dialog(this)
                 progressBar.setContentView(R.layout.progress_bar)
@@ -39,15 +32,20 @@ class BookUploadActivity : AppCompatActivity() {
 
                 val dRef: StorageReference = FirebaseStorage.getInstance().reference
                 dRef.child(
-                    "Book_Pdf-"+ bookNameValue+ " " + System.currentTimeMillis()
+                    "Book_Pdf" + System.currentTimeMillis()
                         .toString()
                 ).putFile(uriImage).addOnSuccessListener { taskSnapshot ->
                     taskSnapshot.metadata!!.reference!!.downloadUrl.addOnSuccessListener { url1 ->
                         dRef.child("Book_Image" + System.currentTimeMillis().toString())
                             .putFile(uriPdf).addOnSuccessListener { taskSnapshot1 ->
                             taskSnapshot1.metadata!!.reference!!.downloadUrl.addOnSuccessListener { url2 ->
+                                val bookName = findViewById<EditText>(R.id.book_name_upload)
+                                val userName = findViewById<EditText>(R.id.book_upload_user_name)
+                                val comments = findViewById<EditText>((R.id.upload_book_comment))
 
-
+                                val bookNameValue = bookName.text.toString()
+                                val userNameValue = userName.text.toString()
+                                val commentsValue = comments.text.toString()
                                 val bookData = hashMapOf(
                                     "Book Name" to bookNameValue,
                                     "Uploader Name" to userNameValue,
