@@ -175,18 +175,6 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/student_sign_out"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@color/transparent"
-                android:onClick="signOutUser"
-                android:text="@string/sign_out"
-                android:visibility="gone"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
