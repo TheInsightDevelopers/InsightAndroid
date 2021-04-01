@@ -1,3 +1,3 @@
 # Insights
-Solution Challenge 2021
+App to Share thoughts, books and Videos for Education
 
