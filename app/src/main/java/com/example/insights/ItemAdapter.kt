@@ -11,8 +11,6 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.storage.FirebaseStorage
-import java.io.File
 
 class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String, String>>) :
     RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
