@@ -25,11 +25,11 @@ class ForumnActivity : AppCompatActivity() {
         val recyclerview = findViewById<RecyclerView>(R.id.chat_recycler)
         recyclerview.layoutManager = LinearLayoutManager(this)
 
-        val Itemadapter = forumadapter(this, messagedata)
-        recyclerview.adapter = Itemadapter
-        recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
+        val BookRecylerViewAdapter = forumadapter(this, messagedata)
+        recyclerview.adapter = BookRecylerViewAdapter
+        recyclerview.scrollToPosition((BookRecylerViewAdapter.itemCount) - 1)
         findViewById<EditText>(R.id.message_input).setOnClickListener {
-            recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
+            recyclerview.scrollToPosition((BookRecylerViewAdapter.itemCount) - 1)
 
         }
 
@@ -72,9 +72,9 @@ class ForumnActivity : AppCompatActivity() {
                     for (change in value.documentChanges) {
                         if (change.type == DocumentChange.Type.ADDED) {
                             messagedata.add(change.document.data as HashMap<String, String>)
-                            val Itemadapter = forumadapter(this, messagedata)
-                            recyclerview.adapter = Itemadapter
-                            recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
+                            val BookRecylerViewAdapter = forumadapter(this, messagedata)
+                            recyclerview.adapter = BookRecylerViewAdapter
+                            recyclerview.scrollToPosition((BookRecylerViewAdapter.itemCount) - 1)
                         }
                     }
                 }
