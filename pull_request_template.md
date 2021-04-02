@@ -1,7 +1,7 @@
 <!--Give the Title Fixes #(Issue number) (files changed)-->
 ## Description
 
-Fix #issue number
+<!--Please add the line "Fix #issue number" without quotes here, where issue number is the number given in the Issue you have solved-->
 
 <!--Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.-->
 ## ScreenShot
