@@ -11,7 +11,7 @@ Fix # (issue number)
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 <!--Please Include A screenshot If applicable-->
-##ScreenShot
+## ScreenShot
 
 ## Checklist:
 
