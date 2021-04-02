@@ -28,7 +28,6 @@ class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String
         holder.topicItem.text = item["Book Name"]
 
         holder.itemView.setOnClickListener(object : View.OnClickListener {
-
             override fun onClick(view: View) {
                 val intent = Intent(Intent.ACTION_VIEW)
                 url = item["PdfUrl"].toString()
