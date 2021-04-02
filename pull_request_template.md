@@ -22,5 +22,5 @@ Fix #issue number
 - [ ] The App is running Fine and as Expected In my Emulator or Physical Device
 - [ ] I have checked my code and corrected any misspellings
 - [ ] My changes didn't cause any issues for the other functionalities present before.
-- [ ] Requested reviews from atleast two Reviewers
+- [ ] Requested **reviews** from atleast two **Reviewers**
  
