@@ -21,5 +21,5 @@ Please include a summary of the change and which issue is fixed. Please also inc
 - [ ] My changes generate no new warnings
 - [ ] The App is running Fine and as Expected In my Emulator or Physical Device
 - [ ] I have checked my code and corrected any misspellings
-- [ ] My changes Didn't cause any issues for the other functionalities present before.
+- [ ] My changes didn't cause any issues for the other functionalities present before.
  
