@@ -12,18 +12,18 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
-class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String, String>>) :
-    RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
+class BookRecyclerViewAdapter(val context: BookFragment, val items: ArrayList<HashMap<String, String>>) :
+    RecyclerView.Adapter<BookRecyclerViewAdapter.ViewHolder>() {
     lateinit var url: String
     lateinit var uri: Uri
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookRecyclerViewAdapter.ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.home_custom_row, parent, false)
         )
     }
 
-    override fun onBindViewHolder(holder: ItemAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BookRecyclerViewAdapter.ViewHolder, position: Int) {
         val item = items.get(position)
         holder.topicItem.text = item["Book Name"]
 
