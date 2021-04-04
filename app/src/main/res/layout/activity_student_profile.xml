@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/images__3_"
+    android:background="@drawable/login_bg"
     tools:context=".student_profile">
 
     <ScrollView
@@ -27,11 +27,12 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:layout_height="66dp"
                 android:layout_marginTop="40dp"
                 android:text="@string/student_profile"
-                android:textColor="#1EE539"
+                android:textAlignment="center"
+                android:textColor="#162FCA"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -183,12 +184,12 @@
                 android:background="@color/transparent"
                 android:onClick="deleteAccount"
                 android:text="@string/delete_account"
-                android:visibility="gone"
                 android:textAlignment="center"
                 android:textColor="#E80909"
                 android:textColorHighlight="#EC1111"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>
