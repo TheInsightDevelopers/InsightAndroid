@@ -11,28 +11,26 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.storage.FirebaseStorage
-import java.io.File
 
-class ItemAdapter(val context: BookFragment, val items: ArrayList<HashMap<String, String>>) :
-    RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
+class BookRecyclerViewAdapter(val context: BookFragment, val items: ArrayList<HashMap<String, String>>) :
+    RecyclerView.Adapter<BookRecyclerViewAdapter.ViewHolder>() {
     lateinit var url: String
     lateinit var uri: Uri
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookRecyclerViewAdapter.ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.home_custom_row, parent, false)
         )
     }
 
-    override fun onBindViewHolder(holder: ItemAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BookRecyclerViewAdapter.ViewHolder, position: Int) {
         val item = items.get(position)
         holder.topicItem.text = item["Book Name"]
-        url = item["PdfUrl"].toString()
-        holder.itemView.setOnClickListener(object : View.OnClickListener {
 
+        holder.itemView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View) {
                 val intent = Intent(Intent.ACTION_VIEW)
+                url = item["PdfUrl"].toString()
                 intent.type = "application/pdf"
                 intent.data = Uri.parse(url)
                 startActivity(view.context, Intent.createChooser(intent, "Open PDF"), Bundle.EMPTY)

@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.insights.ItemAdapter
 import com.example.insights.ItemAdapter2
 import com.example.insights.R
 import com.google.firebase.firestore.DocumentChange
@@ -20,7 +19,7 @@ class HomeFragment : Fragment() {
         val videoValues = ArrayList<HashMap<String,String>>()
         val root2 = inflater.inflate(R.layout.fragment_home, container, false)
 
-        var recyclerView2: RecyclerView = root2.findViewById<RecyclerView>(R.id.recyclerview_Home)
+        val recyclerView2: RecyclerView = root2.findViewById<RecyclerView>(R.id.recyclerview_Home)
         recyclerView2.layoutManager= LinearLayoutManager(context)
         val db = FirebaseFirestore.getInstance()
         db.collection("Videos").addSnapshotListener { value, error ->
