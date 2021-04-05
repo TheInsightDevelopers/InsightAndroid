@@ -28,8 +28,8 @@ class HomeFragment : Fragment() {
                     for (change in value.documentChanges) {
                         if (change.type == DocumentChange.Type.ADDED) {
                             videoValues.add(change.document.data as HashMap<String, String>)
-                            val VideoRecyclerViewAdapter = VideoRecyclerViewAdapter(this, videoValues)
-                            recyclerView2.adapter = Itemadapter
+                            val video_recycler_view_adapter = VideoRecyclerViewAdapter(this, videoValues)
+                            recyclerView2.adapter = video_recycler_view_adapter
                         }
                     }
                 }
