@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.insights.ItemAdapter2
+import com.example.insights.VideoRecyclerViewAdapter
 import com.example.insights.R
 import com.google.firebase.firestore.DocumentChange
 import com.google.firebase.firestore.FirebaseFirestore
@@ -28,8 +28,8 @@ class HomeFragment : Fragment() {
                     for (change in value.documentChanges) {
                         if (change.type == DocumentChange.Type.ADDED) {
                             videoValues.add(change.document.data as HashMap<String, String>)
-                            val Itemadapter = ItemAdapter2(this, videoValues)
-                            recyclerView2.adapter = Itemadapter
+                            val video_recycler_view_adapter = VideoRecyclerViewAdapter(this, videoValues)
+                            recyclerView2.adapter = video_recycler_view_adapter
                         }
                     }
                 }
