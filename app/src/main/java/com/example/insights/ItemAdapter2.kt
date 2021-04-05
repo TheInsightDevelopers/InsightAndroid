@@ -13,13 +13,13 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class ItemAdapter2(val context: HomeFragment, val items :ArrayList<HashMap<String,String>>): RecyclerView.Adapter<ItemAdapter2.ViewHolder>() {
+class VideoRecyclerViewAdapter(val context: HomeFragment, val items :ArrayList<HashMap<String,String>>): RecyclerView.Adapter<VideoRecyclerViewAdapter.ViewHolder>() {
     lateinit var Url: String
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter2.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VideoRecyclerViewAdapter.ViewHolder {
         return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_custom_row_home_video,parent,false))
     }
 
-    override fun onBindViewHolder(holder: ItemAdapter2.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: VideoRecyclerViewAdapter.ViewHolder, position: Int) {
         val item=items.get(position)
         holder.videoName.text=item["Title"]
         holder.itemView.setOnClickListener(object : View.OnClickListener {
