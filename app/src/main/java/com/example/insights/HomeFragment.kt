@@ -28,7 +28,7 @@ class HomeFragment : Fragment() {
                     for (change in value.documentChanges) {
                         if (change.type == DocumentChange.Type.ADDED) {
                             videoValues.add(change.document.data as HashMap<String, String>)
-                            val Itemadapter = ItemAdapter2(this, videoValues)
+                            val VideoRecyclerViewAdapter = VideoRecyclerViewAdapter(this, videoValues)
                             recyclerView2.adapter = Itemadapter
                         }
                     }
