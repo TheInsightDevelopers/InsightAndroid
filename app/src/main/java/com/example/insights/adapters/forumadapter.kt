@@ -25,7 +25,7 @@ class forumadapter(val context: Context, val items: ArrayList<HashMap<String, St
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items.get(position)
         holder.tv_item.text = item["message"]
-        holder.sender.text = item["sender"]
+        holder.sender.text = item["sender"]+"(" + item["type"]+")"
     }
 
     override fun getItemCount(): Int {
