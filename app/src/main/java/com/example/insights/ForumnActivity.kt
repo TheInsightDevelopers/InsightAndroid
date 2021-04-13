@@ -13,7 +13,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 import kotlin.collections.ArrayList
 
-class ForumnActivity : AppCompatActivity() {
+class  ForumnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forumn)
@@ -45,6 +45,7 @@ class ForumnActivity : AppCompatActivity() {
                     if (values != null) {
                         val userdata = (values.data)
                         val name = userdata?.get("Name")
+                        val type = userdata?.get("type")
                         var message = findViewById<EditText>(R.id.message_input).text.toString()
                         if (message.isNotEmpty()) {
                             var current_time = Date().time.toString()
@@ -52,7 +53,8 @@ class ForumnActivity : AppCompatActivity() {
                                 "message" to message,
                                 "time" to current_time,
                                 "sender" to name,
-                                "uid" to currentUser.uid
+                                "uid" to currentUser.uid,
+                                "type" to type
                             )
                             // Sending Message to Firestore
                             db.collection("message")
