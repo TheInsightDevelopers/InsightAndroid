@@ -1,7 +1,6 @@
-package com.example.insights
+package com.example.insights.adapters
 
 import HomeFragment
-import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -12,14 +11,15 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.insights.R
 
 class VideoRecyclerViewAdapter(val context: HomeFragment, val items :ArrayList<HashMap<String,String>>): RecyclerView.Adapter<VideoRecyclerViewAdapter.ViewHolder>() {
     lateinit var Url: String
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VideoRecyclerViewAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_custom_row_home_video,parent,false))
     }
 
-    override fun onBindViewHolder(holder: VideoRecyclerViewAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item=items.get(position)
         holder.videoName.text=item["Title"]
         holder.itemView.setOnClickListener(object : View.OnClickListener {
