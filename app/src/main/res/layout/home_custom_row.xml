@@ -22,6 +22,12 @@
             android:gravity="center"
             android:orientation="horizontal"
             tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/book_image_view"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="fitXY"/>
 
 
             <TextView
