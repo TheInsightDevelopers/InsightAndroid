@@ -56,8 +56,8 @@ class mainPageNew : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.home -> setCurrentFragment(homeFragment)
-                R.id.book -> setCurrentFragment(bookFragment)
+                R.id.videos -> setCurrentFragment(homeFragment)
+                R.id.books -> setCurrentFragment(bookFragment)
 
 
             }

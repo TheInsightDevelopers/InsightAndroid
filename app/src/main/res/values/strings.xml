@@ -107,4 +107,7 @@
     <string name="upload_book">Upload</string>
     <string name="your_book_would_be_downloaded_to_downloads">Your Book would be Downloaded to Downloads</string>
     <string name="your_book_would_be_downloaded_to_the_downloads_of_your_device">Your book would be downloaded to the downloads of your device</string>
+    <string name="video">Video</string>
+    <string name="books">Books</string>
+    <string name="videos">Videos</string>
 </resources>
