@@ -34,7 +34,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/message_input"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
@@ -42,6 +42,7 @@
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/chat_recycler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
