@@ -27,9 +27,9 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="380dp"
-                android:layout_height="66dp"
-                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:text="@string/student_profile"
                 android:textAlignment="center"
                 android:textColor="#162FCA"
@@ -166,7 +166,7 @@
             <Button
                 android:id="@+id/stud_profile_update_btn_act"
                 android:layout_width="wrap_content"
-                android:layout_height="67dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@color/transparent"
@@ -178,7 +178,7 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="40dp"
                 android:background="@color/transparent"
