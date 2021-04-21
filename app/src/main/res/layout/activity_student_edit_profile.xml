@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/images__3_"
     tools:context=".studentEditProfile">
 
     <TextView
@@ -16,7 +15,7 @@
         android:text="@string/edit_profile21"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#D81B60"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
@@ -78,14 +77,14 @@
                 android:id="@+id/et_edit_profile_stud_class"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/standard33"
                 android:inputType="textPersonName"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:autofillHints="" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -101,14 +100,14 @@
                 android:id="@+id/et_edit_profile_stud_institute"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/institute_name34"
                 android:inputType="textPersonName"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:autofillHints="" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -124,23 +123,24 @@
                 android:id="@+id/et_edit_profile_stud_fav_subject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/favorite_subject35"
                 android:inputType="textPersonName"
                 android:textAlignment="viewStart"
                 android:textColor="#D81B60"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:autofillHints="" />
+                android:textStyle="bold" />
+
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
                 android:id="@+id/stud_profile_update_btn"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textSize="20sp"
-                android:textColor="@color/white"
                 android:background="@color/transparent"
-                android:text="@string/edit_profile"/>
+                android:text="@string/edit_profile"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>

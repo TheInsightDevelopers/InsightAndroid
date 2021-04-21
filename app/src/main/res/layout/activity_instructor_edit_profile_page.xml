@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:padding="10dp"
-    android:orientation="vertical"
     android:background="@drawable/login_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".LoginPage">
 
     <androidx.cardview.widget.CardView
@@ -71,7 +71,7 @@
                 android:padding="10dp" />
 
             <Button
-                android:id="@+id/instructor_profile_editprofile"
+                android:id="@+id/SaveProfileButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

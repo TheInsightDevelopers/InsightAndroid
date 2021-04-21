@@ -1,38 +1,37 @@
 package com.example.insights
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insights.adapters.forumadapter
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.crashlytics.internal.common.CurrentTimeProvider
 import com.google.firebase.firestore.DocumentChange
-import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
 import java.util.*
 import kotlin.collections.ArrayList
-import kotlin.collections.HashMap
 
-class ForumnActivity : AppCompatActivity() {
+class  ForumnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forumn)
         val db = FirebaseFirestore.getInstance()
         //Initalize message data
-        val messagedata = ArrayList<HashMap<String,String>>()
+        val messagedata = ArrayList<HashMap<String, String>>()
+
         /*****************************************************Recycler View*****************************************************/
         val recyclerview = findViewById<RecyclerView>(R.id.chat_recycler)
         recyclerview.layoutManager = LinearLayoutManager(this)
 
         val Itemadapter = forumadapter(this, messagedata)
         recyclerview.adapter = Itemadapter
-        recyclerview.scrollToPosition((Itemadapter.getItemCount())-1)
+        recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
+        findViewById<EditText>(R.id.message_input).setOnClickListener {
+            recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
 
+        }
 
 
         /***************************************Sending Message***********************************************/
@@ -46,6 +45,7 @@ class ForumnActivity : AppCompatActivity() {
                     if (values != null) {
                         val userdata = (values.data)
                         val name = userdata?.get("Name")
+                        val type = userdata?.get("type")
                         var message = findViewById<EditText>(R.id.message_input).text.toString()
                         if (message.isNotEmpty()) {
                             var current_time = Date().time.toString()
@@ -53,7 +53,8 @@ class ForumnActivity : AppCompatActivity() {
                                 "message" to message,
                                 "time" to current_time,
                                 "sender" to name,
-                                "uid" to currentUser.uid
+                                "uid" to currentUser.uid,
+                                "type" to type
                             )
                             // Sending Message to Firestore
                             db.collection("message")
@@ -68,22 +69,21 @@ class ForumnActivity : AppCompatActivity() {
 
         /****************************************Firebase Listener************************************************/
         db.collection("message").addSnapshotListener { value, error ->
-            if(error== null){
+            if (error == null) {
                 if (value != null) {
-                    for (change in value!!.documentChanges){
-                       if(change.type == DocumentChange.Type.ADDED){
-                           messagedata.add(change.document.data as HashMap<String, String>)
-                           val Itemadapter = forumadapter(this, messagedata)
-                           recyclerview.adapter = Itemadapter
-                           recyclerview.scrollToPosition((Itemadapter.getItemCount())-1)
-                       }
+                    for (change in value.documentChanges) {
+                        if (change.type == DocumentChange.Type.ADDED) {
+                            messagedata.add(change.document.data as HashMap<String, String>)
+                            val Itemadapter = forumadapter(this, messagedata)
+                            recyclerview.adapter = Itemadapter
+                            recyclerview.scrollToPosition((Itemadapter.itemCount) - 1)
+                        }
                     }
                 }
             }
         }
 
     }
-
 
 
 }

@@ -5,13 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insights.R
 
 
-class forumadapter(val context: Context, val items: ArrayList<HashMap<String,String>>):
-    RecyclerView.Adapter<forumadapter.ViewHolder>(){
+class forumadapter(val context: Context, val items: ArrayList<HashMap<String, String>>) :
+    RecyclerView.Adapter<forumadapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -24,14 +23,15 @@ class forumadapter(val context: Context, val items: ArrayList<HashMap<String,Str
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item =  items.get(position)
+        val item = items.get(position)
         holder.tv_item.text = item["message"]
-        holder.sender.text = item["sender"]
+        holder.sender.text = item["sender"]+"(" + item["type"]+")"
     }
 
     override fun getItemCount(): Int {
         return items.size
     }
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tv_item = view.findViewById<TextView>(R.id.forum_message)
 

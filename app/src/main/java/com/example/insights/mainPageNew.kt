@@ -4,11 +4,11 @@ import BookFragment
 import HomeFragment
 import ProfileFragment
 import android.content.Intent
-import android.content.res.ColorStateList
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.view.View
 import android.widget.ImageButton
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -27,7 +27,6 @@ class mainPageNew : AppCompatActivity() {
         setCurrentFragment(homeFragment)
 
 
-
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         findViewById<ImageButton>(R.id.main_profile_ic).setOnClickListener {
             val db = FirebaseFirestore.getInstance().collection("Users")
@@ -39,9 +38,13 @@ class mainPageNew : AppCompatActivity() {
                         val type = hashMapData?.get("type").toString()
                         if (type == "Student") {
                             startActivity(Intent(this@mainPageNew, student_profile::class.java))
-                        }
-                        else{
-                            startActivity(Intent(this@mainPageNew,InstructorProfileActivity::class.java))
+                        } else {
+                            startActivity(
+                                Intent(
+                                    this@mainPageNew,
+                                    InstructorProfileActivity::class.java
+                                )
+                            )
                         }
                     }
                 }
@@ -53,9 +56,9 @@ class mainPageNew : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.home -> setCurrentFragment(homeFragment)
-                R.id.book -> setCurrentFragment(bookFragment)
-                R.id.profile -> setCurrentFragment(profileFragment)
+                R.id.videos -> setCurrentFragment(homeFragment)
+                R.id.books -> setCurrentFragment(bookFragment)
+
 
             }
             true
@@ -63,11 +66,17 @@ class mainPageNew : AppCompatActivity() {
 
     }
 
-    private fun setCurrentFragment(fragment: Fragment)=
+    private fun setCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.flFragment,fragment)
+            replace(R.id.flFragment, fragment)
             commit()
         }
+    fun signOutUser(view: View) {
+        FirebaseAuth.getInstance().signOut()
+        startActivity(Intent(this@mainPageNew, LoginPage::class.java))
+        Toast.makeText(this@mainPageNew,"Signned Out SuccessFully",Toast.LENGTH_SHORT).show()
+        finish()
+    }
 
 }
 
