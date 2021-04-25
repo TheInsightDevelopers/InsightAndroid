@@ -52,7 +52,7 @@
         android:src="@drawable/send_ic"
         app:layout_constraintBottom_toBottomOf="@id/message_input"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/chat_recycler"
+        app:layout_constraintStart_toEndOf="@+id/message_input"
         app:layout_constraintTop_toTopOf="@id/message_input" />
 
 
