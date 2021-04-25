@@ -110,4 +110,6 @@
     <string name="video">Video</string>
     <string name="books">Books</string>
     <string name="videos">Videos</string>
+    <string name="forum">Forum</string>
+    <string name="todo">TODO</string>
 </resources>

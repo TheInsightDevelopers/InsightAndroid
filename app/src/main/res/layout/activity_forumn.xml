@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Forum"
+        android:text="@string/forum"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
         android:textSize="30sp"
@@ -23,24 +23,20 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chat_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@id/message_input"
+        android:layout_width="414dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/forum_head" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/message_input"
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:hint="@string/forum_message"
         android:padding="10dp"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,12 +45,13 @@
         android:id="@+id/forum_send_button"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_marginStart="10dp"
         android:background="@color/transparent"
         android:src="@drawable/send_ic"
         app:layout_constraintBottom_toBottomOf="@id/message_input"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/message_input"
-        app:layout_constraintTop_toTopOf="@id/message_input" />
+        app:layout_constraintTop_toTopOf="@id/message_input"
+        android:contentDescription="@string/todo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
