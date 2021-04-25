@@ -28,7 +28,8 @@
 
         <activity android:name=".UploadVideoActivity" />
         <activity android:name=".BookUploadActivity" />
-        <activity android:name=".ForumnActivity" />
+        <activity
+            android:name=".ForumnActivity" />
         <activity android:name=".student_profile" />
         <activity android:name=".mainPageNew" />
         <activity android:name=".studentEditProfile" />
