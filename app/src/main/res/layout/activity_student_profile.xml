@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text="@string/student_profile"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="#162FCA"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -39,6 +39,16 @@
                 app:layout_constraintHorizontal_bias="0.434"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:id="@+id/profile_image_view"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:layout_gravity="center"/>
+
 
             <TextView
                 android:id="@+id/textView2"
@@ -162,6 +172,15 @@
                 android:text="@string/upload_video_student_profile"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:id="@+id/update_profile_image_btn"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/update_profile_image"/>
 
             <Button
                 android:id="@+id/stud_profile_update_btn_act"
