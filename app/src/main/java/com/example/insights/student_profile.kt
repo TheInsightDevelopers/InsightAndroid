@@ -58,36 +58,39 @@ class student_profile : AppCompatActivity() {
                 }
             }
     }
+
     /************************Upload Video******************************/
     fun startVideoUpload(view: View) {
         startActivity(Intent(this@student_profile, UploadVideoActivity::class.java))
     }
+
     /*************************************Upload Book**********************************/
     fun startBookUpload(view: View) {
         startActivity(Intent(this@student_profile, BookUploadActivity::class.java))
     }
+
     /*******************************Profile Image*****************************************/
-    private fun pickFromGallery(){
+    private fun pickFromGallery() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         intent.type = "image/*"
-        val mimeTypes = arrayOf("image/jpeg","image/png","image/jpg")
+        val mimeTypes = arrayOf("image/jpeg", "image/png", "image/jpg")
         intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes)
-        intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        intent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
         startActivityForResult(intent, GALLERY_REQUEST_CODE)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(requestCode == GALLERY_REQUEST_CODE){
-            if(resultCode == Activity.RESULT_OK){
+        if (requestCode == GALLERY_REQUEST_CODE) {
+            if (resultCode == Activity.RESULT_OK) {
                 data?.data?.let { uri ->
                     launchImageCrop(uri)
                 }
             }
         }
-        if(requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE){
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             val result = CropImage.getActivityResult(data)
-            if(resultCode == Activity.RESULT_OK){
+            if (resultCode == Activity.RESULT_OK) {
                 setImage(result.uri)
             }
         }
@@ -98,18 +101,18 @@ class student_profile : AppCompatActivity() {
         val uid = FirebaseAuth.getInstance().currentUser.uid.toString()
         if (uri != null) {
             dRef.child(
-                "ProfileImage"+ uid + System.currentTimeMillis()
+                "ProfileImage" + uid + System.currentTimeMillis()
                     .toString()
             ).putFile(uri).addOnSuccessListener { taskSnapshot ->
-                taskSnapshot.metadata!!.reference!!.downloadUrl.addOnSuccessListener{ url ->
-                    Log.d("urlcheck","passed this")
+                taskSnapshot.metadata!!.reference!!.downloadUrl.addOnSuccessListener { url ->
+                    Log.d("urlcheck", "passed this")
 
-                val profileHash = hashMapOf("url" to url.toString())
+                    val profileHash = hashMapOf("url" to url.toString())
                     FirebaseFirestore.getInstance()
                         .collection("ProfileImages")
                         .document(uid.toString())
                         .set(profileHash).addOnCompleteListener { task ->
-                            if(task.isSuccessful){
+                            if (task.isSuccessful) {
                                 dataFetch()
                             }
                         }
@@ -119,14 +122,15 @@ class student_profile : AppCompatActivity() {
         }
     }
 
-    private fun launchImageCrop(uri: Uri){
+    private fun launchImageCrop(uri: Uri) {
         CropImage.activity(uri)
             .setGuidelines(CropImageView.Guidelines.ON)
-            .setAspectRatio(1920,1080)
+            .setAspectRatio(1920, 1080)
             .setCropShape(CropImageView.CropShape.RECTANGLE)
             .start(this)
     }
-    private fun dataFetch(){
+
+    private fun dataFetch() {
         val uid = FirebaseAuth.getInstance().currentUser.uid
         val db = FirebaseFirestore.getInstance().collection("Users")
             .document(uid)
@@ -152,17 +156,17 @@ class student_profile : AppCompatActivity() {
                         .collection("ProfileImages")
                         .document(uid.toString()).get()
                         .addOnSuccessListener { ImageDocument ->
-                            if(ImageDocument != null){
+                            if (ImageDocument != null) {
                                 val imageUrl = ImageDocument.data?.get("url").toString()
                                 Glide.with(profileImageView)
                                     .load(imageUrl)
                                     .centerCrop()
                                     .placeholder(R.drawable.send_ic)
                                     .error(R.drawable.ic_profile_btn)
-                                    .fallback(R.drawable.ic_baseline_menu_book_24).into(profileImageView)
+                                    .fallback(R.drawable.ic_baseline_menu_book_24)
+                                    .into(profileImageView)
                             }
                         }
-
 
 
                 }
