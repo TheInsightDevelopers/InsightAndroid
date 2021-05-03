@@ -111,4 +111,7 @@
     <string name="books">Books</string>
     <string name="videos">Videos</string>
     <string name="update_profile_image">Update Profile Image</string>
+    <string name="forum">Forum</string>
+    <string name="todo">TODO</string>
+    <string name="forum_send_button">forum_send_button</string>
 </resources>
