@@ -25,12 +25,12 @@ class forumadapter(val context: Context, val items: ArrayList<HashMap<String, St
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items.get(position)
         holder.tv_item.text = item["message"]
-        holder.sender.text = item["sender"]+"(" + item["type"]+")"
+        holder.sender.text = item["sender"] + "(" + item["type"] + ")"
         val time = item["time"].toString()
-        val month = time.substring(4,6)
-        val date = time.substring(6,8)
-        val hour = time.substring(8,10)
-        val minute = time.substring(10,12)
+        val month = time.substring(4, 6)
+        val date = time.substring(6, 8)
+        val hour = time.substring(8, 10)
+        val minute = time.substring(10, 12)
         holder.timeStamp.text = hour + ":" + minute + "  " + date + "-" + month
     }
 
