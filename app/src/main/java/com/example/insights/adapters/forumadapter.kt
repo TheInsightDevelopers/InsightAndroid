@@ -26,6 +26,12 @@ class forumadapter(val context: Context, val items: ArrayList<HashMap<String, St
         val item = items.get(position)
         holder.tv_item.text = item["message"]
         holder.sender.text = item["sender"]+"(" + item["type"]+")"
+        val time = item["time"].toString()
+        val month = time.substring(4,6)
+        val date = time.substring(6,8)
+        val hour = time.substring(8,10)
+        val minute = time.substring(10,12)
+        holder.timeStamp.text = hour + ":" + minute + "  " + date + "-" + month
     }
 
     override fun getItemCount(): Int {
@@ -36,6 +42,8 @@ class forumadapter(val context: Context, val items: ArrayList<HashMap<String, St
         val tv_item = view.findViewById<TextView>(R.id.forum_message)
 
         val sender = view.findViewById<TextView>(R.id.forum_sender_tv)
+
+        val timeStamp: TextView = view.findViewById(R.id.chat_time_stamp)
     }
 
 }
