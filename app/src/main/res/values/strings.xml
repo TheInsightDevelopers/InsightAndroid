@@ -114,4 +114,5 @@
     <string name="forum">Forum</string>
     <string name="todo">TODO</string>
     <string name="forum_send_button">forum_send_button</string>
+    <string name="Time">Time</string>
 </resources>
