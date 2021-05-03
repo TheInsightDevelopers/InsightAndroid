@@ -104,14 +104,17 @@ class student_profile : AppCompatActivity() {
                 taskSnapshot.metadata!!.reference!!.downloadUrl.addOnSuccessListener{ url ->
                     Log.d("urlcheck","passed this")
 
-                val profileHash = hashMapOf("url" to url)
-                    FirebaseFirestore.getInstance().collection("ProfileImages").document(uid)
-                        .set(profileHash).addOnCompleteListener{ task ->
+                val profileHash = hashMapOf("url" to url.toString())
+                    FirebaseFirestore.getInstance()
+                        .collection("ProfileImages")
+                        .document(uid.toString())
+                        .set(profileHash).addOnCompleteListener { task ->
                             if(task.isSuccessful){
                                 dataFetch()
                             }
                         }
                 }
+
             }
         }
     }
@@ -145,16 +148,18 @@ class student_profile : AppCompatActivity() {
                     findViewById<TextView>(R.id.student_profile_school).text =
                         school as CharSequence?
                     val profileImageView: ImageView = findViewById(R.id.profile_image_view)
-                    FirebaseFirestore.getInstance().collection("ProfileImages").document(uid).get()
+                    FirebaseFirestore.getInstance()
+                        .collection("ProfileImages")
+                        .document(uid.toString()).get()
                         .addOnSuccessListener { ImageDocument ->
                             if(ImageDocument != null){
-                                val imageUrl = ImageDocument.data?.get("url")
+                                val imageUrl = ImageDocument.data?.get("url").toString()
                                 Glide.with(profileImageView)
                                     .load(imageUrl)
                                     .centerCrop()
-                                    .placeholder(R.drawable.ic_profile_btn)
+                                    .placeholder(R.drawable.send_ic)
                                     .error(R.drawable.ic_profile_btn)
-                                    .fallback(R.drawable.ic_profile_btn).into(profileImageView)
+                                    .fallback(R.drawable.ic_baseline_menu_book_24).into(profileImageView)
                             }
                         }
 
