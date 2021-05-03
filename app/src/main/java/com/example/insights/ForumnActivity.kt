@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-class  ForumnActivity : AppCompatActivity() {
+class ForumnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forumn)
@@ -49,7 +49,8 @@ class  ForumnActivity : AppCompatActivity() {
                         val type = userdata?.get("type")
                         var message = findViewById<EditText>(R.id.message_input).text.toString()
                         if (message.isNotEmpty()) {
-                            var current_time = SimpleDateFormat("yyyyMMddHHmmss").format(Date()).toString()
+                            var current_time =
+                                SimpleDateFormat("yyyyMMddHHmmss").format(Date()).toString()
                             var data = hashMapOf(
                                 "message" to message,
                                 "time" to current_time,
