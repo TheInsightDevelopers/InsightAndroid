@@ -51,16 +51,22 @@ class ForumnActivity : AppCompatActivity() {
                         if (message.isNotEmpty()) {
                             var current_time =
                                 SimpleDateFormat("yyyyMMddHHmmss").format(Date()).toString()
-                            var data = hashMapOf(
-                                "message" to message,
-                                "time" to current_time,
-                                "sender" to name,
-                                "uid" to currentUser.uid,
-                                "type" to type
-                            )
-                            // Sending Message to Firestore
-                            db.collection("message")
-                                .document(current_time).set(data)
+                            FirebaseFirestore.getInstance()
+                                .collection("ProfileImages")
+                                .document(currentUser.uid).get().addOnSuccessListener { ImageSnapshot ->
+                                    val imageUrl = ImageSnapshot?.data?.get("url").toString()
+                                    var data = hashMapOf(
+                                        "message" to message,
+                                        "time" to current_time,
+                                        "sender" to name,
+                                        "uid" to currentUser.uid,
+                                        "type" to type,
+                                        "profileimageurl" to imageUrl
+                                    )
+                                    // Sending Message to Firestore
+                                    db.collection("message")
+                                        .document(current_time).set(data)
+                                }
                         }
                     }
 

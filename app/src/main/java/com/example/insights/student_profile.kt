@@ -125,7 +125,7 @@ class student_profile : AppCompatActivity() {
     private fun launchImageCrop(uri: Uri) {
         CropImage.activity(uri)
             .setGuidelines(CropImageView.Guidelines.ON)
-            .setAspectRatio(1920, 1080)
+            .setAspectRatio(1080, 1080)
             .setCropShape(CropImageView.CropShape.RECTANGLE)
             .start(this)
     }

@@ -28,7 +28,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Time" />
-
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:id="@+id/sender_image"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:layout_gravity="start"/>
             <TextView
                 android:id="@+id/forum_sender_tv"
                 android:layout_width="wrap_content"

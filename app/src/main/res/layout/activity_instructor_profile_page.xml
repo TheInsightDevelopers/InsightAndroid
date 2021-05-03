@@ -164,7 +164,6 @@
                     android:layout_gravity="center_horizontal"
                     android:background="@color/transparent"
                     android:importantForAccessibility="no"
-                    android:visibility="gone"
                     android:text="@string/delete_account"
                     android:textColor="#FF0000" />
 
